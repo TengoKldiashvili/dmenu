@@ -1,5 +1,20 @@
 {
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(auth)/register/page": "app/(auth)/register/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/categories/route": "app/api/categories/route.js",
+  "/api/items/route": "app/api/items/route.js",
+  "/api/menus/route": "app/api/menus/route.js",
+  "/api/uploadthing/route": "app/api/uploadthing/route.js",
+  "/dashboard/create-menu/page": "app/dashboard/create-menu/page.js",
+  "/dashboard/menu/[menuId]/add-category/page": "app/dashboard/menu/[menuId]/add-category/page.js",
+  "/dashboard/menu/[menuId]/add-item/page": "app/dashboard/menu/[menuId]/add-item/page.js",
+  "/dashboard/menu/[menuId]/page": "app/dashboard/menu/[menuId]/page.js",
+  "/dashboard/menu/[menuId]/qr/page": "app/dashboard/menu/[menuId]/qr/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
   "/login/page": "app/login/page.js",
-  "/page": "app/page.js"
+  "/menu/[id]/page": "app/menu/[id]/page.js",
+  "/page": "app/page.js",
+  "/register/page": "app/register/page.js"
 }

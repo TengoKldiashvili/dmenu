@@ -8,6 +8,7 @@ export default function AddCategoryPage() {
   const router = useRouter();
   const params = useParams();
   const menuId = params.menuId as string;
+
   const [name, setName] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -30,7 +31,7 @@ export default function AddCategoryPage() {
         const data = await res.json();
         setError(data.error || "Failed to create category");
       }
-    } catch (err) {
+    } catch {
       setError("Something went wrong");
     } finally {
       setLoading(false);
@@ -38,49 +39,70 @@ export default function AddCategoryPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-2xl">
+    <div className="max-w-3xl mx-auto px-6 py-10">
+
+      {/* BACK */}
       <Link
         href={`/dashboard/menu/${menuId}`}
-        className="text-indigo-600 hover:text-indigo-800 mb-4 inline-block"
+        className="inline-block mb-6 text-sm text-gray-500 hover:text-gray-900"
       >
-        ← Back to Menu
+        ← Back to menu
       </Link>
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">Add Category</h1>
 
-      <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6">
+      {/* TITLE */}
+      <h1 className="text-3xl font-semibold tracking-tight mb-10">
+        Add category
+      </h1>
+
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white border border-gray-200 rounded-2xl p-8 space-y-8"
+      >
         {error && (
-          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded mb-4">
+          <div className="border border-red-200 bg-red-50 text-red-700 rounded-lg px-4 py-3">
             {error}
           </div>
         )}
 
-        <div className="space-y-4">
-          <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-              Category Name *
-            </label>
-            <input
-              id="name"
-              type="text"
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-            />
-          </div>
+        {/* FIELD */}
+        <div>
+          <label className="block text-sm font-medium mb-[1px]">
+            Category name
+          </label>
+          <input
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="e.g. Drinks, Desserts"
+            className="
+              w-full rounded-lg border border-gray-300 px-4 py-2
+              focus:border-gray-900 focus:outline-none
+            "
+          />
         </div>
 
-        <div className="mt-6 flex gap-4">
+        {/* ACTIONS */}
+        <div className="flex items-center gap-4 pt-2">
           <button
             type="submit"
             disabled={loading}
-            className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 disabled:opacity-50"
+            className="
+              bg-black text-white text-sm font-medium
+              px-6 py-2.5 rounded-lg
+              hover:bg-gray-800 transition
+              disabled:opacity-50
+            "
           >
-            {loading ? "Creating..." : "Create Category"}
+            {loading ? "Creating..." : "Create category"}
           </button>
+
           <Link
             href={`/dashboard/menu/${menuId}`}
-            className="px-6 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50"
+            className="
+              px-6 py-2.5 rounded-lg text-sm
+              border border-gray-300
+              hover:border-gray-900 transition
+            "
           >
             Cancel
           </Link>
@@ -89,4 +111,3 @@ export default function AddCategoryPage() {
     </div>
   );
 }
-

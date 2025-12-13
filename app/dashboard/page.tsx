@@ -5,69 +5,95 @@ import Link from "next/link";
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();
-
-  if (!user) {
-    redirect("/login");
-  }
+  if (!user) redirect("/login");
 
   const menus = await db.menu.findMany({
     where: { userId: user.id },
     include: {
-      categories: {
-        include: {
-          items: true,
-        },
-      },
+      categories: { include: { items: true } },
     },
     orderBy: { createdAt: "desc" },
   });
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-900">Your Menus</h1>
+    <div>
+      {/* HEADER */}
+      <div className="flex items-center justify-between mb-10">
+        <div>
+          <h1 className="text-3xl font-semibold tracking-tight">
+            Your menus
+          </h1>
+          <p className="text-gray-500 text-sm mt-1">
+            Manage your digital menus
+          </p>
+        </div>
+
         <Link
           href="/dashboard/create-menu"
-          className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+          className="
+            px-5 py-2.5 rounded-lg
+            bg-black text-white text-sm font-medium
+            hover:bg-gray-800 transition-colors
+          "
         >
-          Create New Menu
+          Create menu
         </Link>
       </div>
 
+      {/* EMPTY */}
       {menus.length === 0 ? (
-        <div className="text-center py-12">
-          <p className="text-gray-600 mb-4">You don't have any menus yet.</p>
+        <div className="bg-white border border-dashed border-gray-300 rounded-xl py-20 text-center">
+          <p className="text-gray-500 mb-6">
+            You don’t have any menus yet
+          </p>
           <Link
             href="/dashboard/create-menu"
-            className="text-indigo-600 hover:text-indigo-800"
+            className="text-sm underline hover:text-black"
           >
             Create your first menu →
           </Link>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {menus.map((menu) => (
-            <Link
-              key={menu.id}
-              href={`/dashboard/menu/${menu.id}`}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
-            >
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                {menu.title}
-              </h2>
-              {menu.description && (
-                <p className="text-gray-600 text-sm mb-4">{menu.description}</p>
-              )}
-              <div className="text-sm text-gray-500">
-                {menu.categories.length} categories •{" "}
-                {menu.categories.reduce((acc, cat) => acc + cat.items.length, 0)}{" "}
-                items
-              </div>
-            </Link>
-          ))}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {menus.map((menu) => {
+            const itemsCount = menu.categories.reduce(
+              (acc, cat) => acc + cat.items.length,
+              0
+            );
+
+            return (
+              <Link
+                key={menu.id}
+                href={`/dashboard/menu/${menu.id}`}
+                className="
+                  group bg-white rounded-xl p-6
+                  border border-gray-200
+                  transition-all
+                  hover:border-gray-900
+                  hover:-translate-y-1
+                "
+              >
+                {/* TITLE */}
+                <h2 className="text-lg font-medium mb-1 group-hover:text-black">
+                  {menu.title}
+                </h2>
+
+                {menu.description && (
+                  <p className="text-sm text-gray-500 mb-4 line-clamp-2">
+                    {menu.description}
+                  </p>
+                )}
+
+                {/* STATS */}
+                <div className="flex justify-between text-xs text-gray-500">
+                  <span>{menu.categories.length} categories</span>
+                  <span>{itemsCount} items</span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       )}
     </div>
   );
 }
-

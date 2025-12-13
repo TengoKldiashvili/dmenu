@@ -2,48 +2,77 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-indigo-600">MenuBuilder</h1>
-        <div className="flex gap-4">
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+
+      {/* NAV */}
+      <nav className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+        <h1 className="text-xl font-semibold tracking-tight">
+          MenuBuilder
+        </h1>
+
+        <div className="flex items-center gap-4">
           <Link
             href="/login"
-            className="px-4 py-2 text-indigo-600 hover:text-indigo-800"
+            className="text-sm text-gray-600 hover:text-black transition"
           >
-            Login
+            Sign in
           </Link>
           <Link
             href="/register"
-            className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+            className="
+              text-sm font-medium
+              px-4 py-2 rounded-lg
+              bg-black text-white
+              hover:bg-gray-800 transition
+            "
           >
-            Sign Up
+            Get started
           </Link>
         </div>
       </nav>
 
-      <main className="container mx-auto px-4 py-20 text-center">
-        <h1 className="text-5xl font-bold text-gray-900 mb-6">
-          Create Beautiful Digital Menus
-        </h1>
-        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Transform your restaurant menu into a stunning digital experience.
-          Share with QR codes and impress your customers.
+      {/* HERO */}
+      <main className="max-w-5xl mx-auto px-6 py-32 text-center">
+        <h2 className="text-5xl font-semibold tracking-tight mb-6">
+          Digital menus, done right
+        </h2>
+
+        <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12">
+          Create clean, modern digital menus for your restaurant.
+          Share them instantly with a QR code — no apps, no hassle.
         </p>
-        <div className="flex gap-4 justify-center">
+
+        <div className="flex justify-center gap-4">
           <Link
             href="/register"
-            className="px-8 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 text-lg font-semibold"
+            className="
+              px-8 py-3 rounded-lg
+              bg-black text-white
+              text-base font-medium
+              hover:bg-gray-800 transition
+            "
           >
-            Get Started Free
+            Create your menu
           </Link>
+
           <Link
             href="/login"
-            className="px-8 py-3 border-2 border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 text-lg font-semibold"
+            className="
+              px-8 py-3 rounded-lg
+              border border-gray-300
+              text-base font-medium
+              hover:border-gray-900 transition
+            "
           >
-            Sign In
+            Sign in
           </Link>
         </div>
       </main>
+
+      {/* FOOTER */}
+      <footer className="text-center text-xs text-gray-400 pb-8">
+        © {new Date().getFullYear()} MenuBuilder
+      </footer>
     </div>
   );
 }
