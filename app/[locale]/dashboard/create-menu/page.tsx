@@ -3,10 +3,14 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import LogoUpload from "./LogoUpload";
+import { useTranslations, useLocale } from "next-intl";
+
+import LogoUpload from "@/components/shared/LogoUpload";
 import ThemePicker from "./ThemePicker";
 
 export default function CreateMenuPage() {
+  const t = useTranslations("createMenu");
+  const locale = useLocale();
   const router = useRouter();
 
   const [title, setTitle] = useState("");
@@ -36,40 +40,39 @@ export default function CreateMenuPage() {
 
       if (res.ok) {
         const menu = await res.json();
-        router.push(`/dashboard/menu/${menu.id}`);
+        router.push(`/${locale}/dashboard/menu/${menu.id}`);
       } else {
         const data = await res.json();
-        setError(data.error || "Failed to create menu");
+        setError(data.error || t("error"));
       }
     } catch {
-      setError("Something went wrong");
+      setError(t("error"));
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-10">
-
+    <div className="max-w-3xl mx-auto px-6 py-12">
       {/* BACK */}
       <Link
-        href="/dashboard"
-        className="inline-block mb-6 text-sm text-gray-500 hover:text-gray-900"
+        href={`/${locale}/dashboard`}
+        className="inline-flex items-center gap-2 mb-8 text-sm text-white/60 hover:text-white transition"
       >
-        ← Back to Dashboard
+        ← {t("back")}
       </Link>
 
       {/* TITLE */}
-      <h1 className="text-3xl font-semibold tracking-tight mb-10">
-        Create new menu
+      <h1 className="text-3xl font-semibold tracking-tight mb-12">
+        {t("title")}
       </h1>
 
       <form
         onSubmit={handleSubmit}
-        className="bg-white border border-gray-200 rounded-2xl p-8 space-y-10"
+        className="rounded-3xl border border-white/10 bg-white/5 p-8 space-y-12 backdrop-blur"
       >
         {error && (
-          <div className="border border-red-200 bg-red-50 text-red-700 rounded-lg px-4 py-3">
+          <div className="rounded-xl border border-red-500/30 bg-red-500/10 text-red-400 px-4 py-3">
             {error}
           </div>
         )}
@@ -77,68 +80,57 @@ export default function CreateMenuPage() {
         {/* BASIC INFO */}
         <div className="space-y-6">
           <div>
-            <label className="block text-sm font-medium mb-1">
-              Menu title *
+            <label className="block text-sm text-white/70 mb-1">
+              {t("menuTitle")} *
             </label>
             <input
               required
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="
-                w-full rounded-lg border border-gray-300 px-4 py-2
-                focus:border-gray-900 focus:outline-none
-              "
-              placeholder="e.g. Summer Menu"
+              placeholder={t("menuTitlePlaceholder")}
+              className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:border-white/40 focus:outline-none"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">
-              Description
+            <label className="block text-sm text-white/70 mb-1">
+              {t("description")}
             </label>
             <textarea
               rows={3}
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              className="
-                w-full rounded-lg border border-gray-300 px-4 py-2
-                focus:border-gray-900 focus:outline-none
-              "
-              placeholder="Optional short description"
+              placeholder={t("descriptionPlaceholder")}
+              className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:border-white/40 focus:outline-none resize-none"
             />
           </div>
         </div>
 
         {/* LOGO */}
-        <LogoUpload value={logoUrl} onChange={setLogoUrl} />
+        <div className="space-y-3">
+          <LogoUpload value={logoUrl} onChange={setLogoUrl} />
+        </div>
 
-        {/* THEME PICKER */}
-        <ThemePicker value={theme} onChange={setTheme} />
+        {/* THEME */}
+        <div className="space-y-3">
+          <ThemePicker value={theme} onChange={setTheme} />
+        </div>
 
         {/* ACTIONS */}
         <div className="flex items-center gap-4 pt-4">
           <button
             type="submit"
             disabled={loading}
-            className="
-              bg-black text-white text-sm font-medium
-              px-6 py-2.5 rounded-lg
-              hover:bg-gray-800 transition
-              disabled:opacity-50
-            "
+            className="rounded-xl bg-white text-gray-950 text-sm font-medium px-6 py-2.5 hover:opacity-90 transition disabled:opacity-50"
           >
-            {loading ? "Creating..." : "Create menu"}
+            {loading ? t("creating") : t("create")}
           </button>
 
           <Link
-            href="/dashboard"
-            className="
-              px-6 py-2.5 rounded-lg text-sm
-              border border-gray-300
-              hover:border-gray-900 transition
-            "
+            href={`/${locale}/dashboard`}
+            className="px-6 py-2.5 rounded-xl text-sm border border-white/20 text-white/70 hover:border-white/50 hover:text-white transition"
           >
-            Cancel
+            {t("cancel")}
           </Link>
         </div>
       </form>

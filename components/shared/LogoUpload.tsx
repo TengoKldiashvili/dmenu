@@ -4,39 +4,38 @@ import Image from "next/image";
 import { UploadDropzone } from "@/lib/uploadthing";
 import { useTranslations } from "next-intl";
 
-interface ImageUploadProps {
-  value?: string;
-  onChange: (url: string) => void;
+interface LogoUploadProps {
+  value?: string | null;
+  onChange: (url: string | null) => void;
 }
 
-export default function ImageUpload({ value, onChange }: ImageUploadProps) {
-  const t = useTranslations("uploadimages");
+export default function LogoUpload({ value, onChange }: LogoUploadProps) {
+  const t = useTranslations("logo");
 
   return (
     <div className="space-y-3">
       {/* LABEL */}
       <label className="block text-sm font-medium text-white">
-        {t("label")}
+        {t("label")}{" "}
+        <span className="text-white/40">({t("optional")})</span>
       </label>
 
       {value ? (
-        <div className="relative w-32 h-32 rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+        <div className="relative w-28 h-28 rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
           <Image
             src={value}
-            alt={t("previewAlt")}
+            alt={t("alt")}
             fill
-            className="object-cover"
+            className="object-contain p-3"
           />
 
           <button
             type="button"
-            onClick={() => onChange("")}
+            onClick={() => onChange(null)}
             className="
               absolute bottom-2 right-2
-              bg-gray-950/80
-              text-xs px-2 py-1
-              rounded-md
-              border border-white/20
+              bg-gray-950/80 text-xs px-2 py-1
+              rounded-md border border-white/20
               text-white/70
               hover:text-white
               hover:border-white/50
@@ -48,26 +47,25 @@ export default function ImageUpload({ value, onChange }: ImageUploadProps) {
         </div>
       ) : (
         <UploadDropzone
-          endpoint="itemImageUploader"
+          endpoint="logoUploader"
           appearance={{
             container:
               "border border-dashed border-white/20 rounded-2xl p-6 bg-white/5 text-center backdrop-blur",
-            button:
-              "bg-gray-950 text-white hover:bg-gray-900 transition rounded-md px-4 py-2 text-sm font-medium border border-white/20",
+           button:
+          "bg-gray-950 text-white hover:bg-gray-900 transition rounded-md px-4 py-2 text-sm font-medium border border-white/20",
             label: "text-white/70 text-sm",
             allowedContent: "text-white/40 text-xs",
             uploadIcon: "text-white/40",
           }}
           content={{
-            button: t("button"),
             label: t("label"),
             allowedContent: t("allowed"),
+            button: t("button"),
           }}
           onClientUploadComplete={(res) => {
             const url = res?.[0]?.url;
             if (url) onChange(url);
           }}
-          onUploadError={() => alert(t("error"))}
         />
       )}
     </div>

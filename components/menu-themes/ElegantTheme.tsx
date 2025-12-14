@@ -1,66 +1,83 @@
 import Image from "next/image";
 import { PublicMenu } from "@/types/menu";
 
-export default function ElegantTheme({ menu }: { menu: PublicMenu }) {
+export default function MinimalTheme({ menu }: { menu: PublicMenu }) {
   return (
-    <div className="min-h-screen bg-black text-yellow-400 font-serif">
-      <div className="max-w-3xl mx-auto px-6 py-20">
+    <div className="min-h-screen bg-[#f6f4ef] text-[#2e2e2e]">
+      <div className="max-w-xl mx-auto px-6 py-20">
 
-        {/* LOGO */}
-        {menu.logoUrl && (
-          <div className="mb-14 text-center">
-            <Image
-              src={menu.logoUrl}
-              alt="Logo"
-              width={160}
-              height={160}
-              className="mx-auto opacity-90"
-            />
-          </div>
-        )}
+        {/* HEADER */}
+        <div className="text-center mb-20">
+          {/* LOGO */}
+          {menu.logoUrl && (
+            <div className="mb-10 flex justify-center">
+              <div className="w-28 h-28 flex items-center justify-center">
+                <Image
+  src={menu.logoUrl}
+  alt="Logo"
+  width={112}
+  height={112}
+/>
+              </div>
+            </div>
+          )}
 
-        {/* TITLE */}
-        <h1 className="text-5xl text-center tracking-wide mb-4">
-          {menu.title}
-        </h1>
+          {/* TITLE */}
+          <h1 className="text-[26px] font-light tracking-[0.15em] mb-3">
+            {menu.title}
+          </h1>
 
-        {/* DESCRIPTION */}
-        {menu.description && (
-          <p className="text-center text-yellow-300/70 mb-20 max-w-xl mx-auto">
-            {menu.description}
-          </p>
-        )}
+          {/* DESCRIPTION */}
+          {menu.description && (
+            <p className="text-[12px] text-[#6b6b6b] tracking-wide max-w-md mx-auto">
+              {menu.description}
+            </p>
+          )}
+        </div>
 
         {/* CATEGORIES */}
         <div className="space-y-24">
           {menu.categories.map((category) => (
             <section key={category.id}>
-              <h2 className="text-2xl text-center mb-12 tracking-widest">
-                {category.name}
-              </h2>
 
-              <div className="space-y-10">
+              {/* CATEGORY HEADER */}
+              <div className="flex items-center gap-4 mb-12">
+                <div className="h-px flex-1 bg-[#d8d5cf]" />
+                <h2 className="text-[11px] uppercase tracking-[0.35em] text-[#6b6b6b]">
+                  {category.name}
+                </h2>
+                <div className="h-px flex-1 bg-[#d8d5cf]" />
+              </div>
+
+              {/* ITEMS */}
+              <div className="space-y-6">
                 {category.items.map((item) => (
-                  <div key={item.id} className="text-center">
-                    <div className="flex justify-center items-baseline gap-4">
-                      <h3 className="text-lg tracking-wide">
+                  <div
+                    key={item.id}
+                    className="grid grid-cols-[1fr_auto] gap-10"
+                  >
+                    {/* ITEM INFO */}
+                    <div>
+                      <p className="text-[14px] font-normal tracking-wide">
                         {item.name}
-                      </h3>
-                      {item.price && (
-                        <span className="text-yellow-500 text-sm">
-                          {item.price.toFixed(2)} ₾
-                        </span>
+                      </p>
+                      {item.description && (
+                        <p className="text-[12px] text-[#6b6b6b] mt-1 leading-relaxed max-w-sm">
+                          {item.description}
+                        </p>
                       )}
                     </div>
 
-                    {item.description && (
-                      <p className="text-sm text-yellow-300/60 mt-2 max-w-md mx-auto">
-                        {item.description}
-                      </p>
+                    {/* PRICE */}
+                    {item.price && (
+                      <span className="text-[13px] tracking-wide text-[#2e2e2e] whitespace-nowrap">
+                        {item.price.toFixed(2)} ₾
+                      </span>
                     )}
                   </div>
                 ))}
               </div>
+
             </section>
           ))}
         </div>

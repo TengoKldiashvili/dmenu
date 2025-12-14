@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface ItemRowProps {
   item: {
@@ -15,12 +16,17 @@ interface ItemRowProps {
   menuId: string;
 }
 
-export default function ItemRow({ item, menuId }: ItemRowProps) {
+export default function ItemRow({ item }: ItemRowProps) {
+  const t = useTranslations("item");
   const router = useRouter();
   const [isDeleting, setIsDeleting] = useState(false);
 
   const handleDelete = async () => {
-    if (!confirm(`Delete item "${item.name}"?`)) return;
+    const confirmed = confirm(
+      t("confirmDelete", { name: item.name })
+    );
+
+    if (!confirmed) return;
 
     setIsDeleting(true);
     try {
@@ -31,8 +37,6 @@ export default function ItemRow({ item, menuId }: ItemRowProps) {
       if (res.ok) {
         router.refresh();
       }
-    } catch (err) {
-      console.error("Error deleting item:", err);
     } finally {
       setIsDeleting(false);
     }
@@ -43,9 +47,10 @@ export default function ItemRow({ item, menuId }: ItemRowProps) {
       className="
         group flex gap-4 items-start
         p-4 rounded-xl
-        border border-gray-200
+        border border-white/10
+        bg-gray-950/40
         transition
-        hover:border-gray-300
+        hover:border-white/30
       "
     >
       {/* IMAGE */}
@@ -64,35 +69,35 @@ export default function ItemRow({ item, menuId }: ItemRowProps) {
       {/* CONTENT */}
       <div className="flex-1">
         <div className="flex justify-between items-start gap-4 mb-1">
-          <h3 className="text-sm font-medium text-gray-900">
+          <h3 className="text-sm font-medium text-white">
             {item.name}
           </h3>
 
           {item.price !== null && (
-            <span className="text-sm font-medium text-gray-700 whitespace-nowrap">
+            <span className="text-sm font-medium text-white/80 whitespace-nowrap">
               ₾{item.price.toFixed(2)}
             </span>
           )}
         </div>
 
         {item.description && (
-          <p className="text-xs text-gray-500 leading-relaxed mb-2">
+          <p className="text-xs text-white/50 leading-relaxed mb-2">
             {item.description}
           </p>
         )}
 
-        {/* ACTIONS */}
+        {/* ACTION */}
         <button
           onClick={handleDelete}
           disabled={isDeleting}
           className="
-            text-xs text-gray-400
-            hover:text-black
+            text-xs text-white/40
+            hover:text-red-400
             transition
             disabled:opacity-50
           "
         >
-          {isDeleting ? "Deleting…" : "Delete"}
+          {isDeleting ? t("deleting") : t("delete")}
         </button>
       </div>
     </div>

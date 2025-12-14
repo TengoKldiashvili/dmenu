@@ -2,12 +2,22 @@ import { createUploadthing, type FileRouter } from "uploadthing/next";
 
 const f = createUploadthing();
 
-export const ourFileRouter = {
-  imageUploader: f({ image: { maxFileSize: "4MB", maxFileCount: 1 } })
-    .onUploadComplete(async ({ metadata, file }) => {
+export const uploadRouter = {
+  itemImageUploader: f({
+    image: { maxFileSize: "4MB", maxFileCount: 1 },
+  })
+    .middleware(async () => ({}))
+    .onUploadComplete(({ file }) => {
+      return { url: file.url };
+    }),
+
+  logoUploader: f({
+    image: { maxFileSize: "2MB", maxFileCount: 1 },
+  })
+    .middleware(async () => ({}))
+    .onUploadComplete(({ file }) => {
       return { url: file.url };
     }),
 } satisfies FileRouter;
 
-export type OurFileRouter = typeof ourFileRouter;
-
+export type UploadRouter = typeof uploadRouter;

@@ -1,0 +1,192 @@
+{
+  "common": {
+    "back": "Back",
+    "cancel": "Cancel",
+    "create": "Create",
+    "save": "Save"
+},
+  "auth": {
+    "title": "Sign in",
+    "subtitle": "Access your dashboard",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "loading": "Signing in…",
+    "noAccount": "Don’t have an account?",
+    "create": "Create one"
+  },
+  "register": {
+    "title": "Create account",
+    "subtitle": "Start building your digital menu",
+    "name": "Name",
+    "nameOptional": "optional",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Create account",
+    "loading": "Creating…",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in"
+  },
+  "navigation": {
+    "backHome": "Back to home"
+  },
+  "dashboard": {
+    "title": "Your menus",
+    "subtitle": "Manage your digital menus",
+    "create": "Create menu",
+    "empty": "You don’t have any menus yet",
+    "emptyCta": "Create your first menu",
+    "categories": "categories",
+    "items": "items"
+  },
+  "buttons": {
+    "signOut": "Sign Out"
+  },
+  "createMenu": {
+    "back": "Back to dashboard",
+    "title": "Create new menu",
+    "menuTitle": "Menu title",
+    "menuTitlePlaceholder": "e.g. Summer Menu",
+    "description": "Description",
+    "descriptionPlaceholder": "Optional short description",
+    "create": "Create menu",
+    "creating": "Creating...",
+    "cancel": "Cancel",
+    "error": "Something went wrong"
+  },
+  "logo": {
+  "label": "Logo",
+  "optional": "optional",
+  "button": "Choose file",
+  "allowed": "Image (max 2MB)",
+  "remove": "Remove",
+  "alt": "Logo",
+  "error": "Logo upload failed"
+},
+  "upload": {
+    "label": "Drag and drop or choose a file",
+    "allowed": "Image (max 2MB)",
+    "button": "Choose file"
+  },
+  "theme": {
+    "label": "Menu theme",
+    "light": "Light",
+    "minimal": "Minimal",
+    "dark": "Dark",
+    "elegant": "Elegant"
+  },
+  "menuBuilder": {
+    "back": "Back to dashboard",
+    "viewQr": "View QR",
+    "addCategory": "Add category",
+    "addItem": "Add item",
+    "emptyTitle": "No categories yet",
+    "emptyCta": "Create your first category"
+  },
+  "category": {
+    "delete": "Delete",
+    "deleting": "Deleting…",
+    "confirmDelete": "Delete category \"{name}\" and all its items?",
+    "empty": "No items in this category yet."
+  },
+  "item": {
+    "delete": "Delete",
+    "deleting": "Deleting…",
+    "confirmDelete": "Delete item \"{name}\"?"
+  },
+  "addCategory": {
+    "back": "Back to menu",
+    "title": "Add category",
+    "nameLabel": "Category name",
+    "namePlaceholder": "e.g. Drinks, Desserts",
+    "create": "Create category",
+    "creating": "Creating…",
+    "cancel": "Cancel",
+    "error": "Failed to create category"
+  },
+  "addItem": {
+    "back": "Back to menu",
+    "title": "Add item",
+    "category": "Category",
+    "name": "Item name",
+    "namePlaceholder": "e.g. Cappuccino",
+    "price": "Price",
+    "priceOptional": "Optional",
+    "description": "Description",
+    "descriptionPlaceholder": "Optional description",
+    "image": "Image",
+    "create": "Create item",
+    "creating": "Creating…",
+    "uploading": "Uploading image…",
+    "cancel": "Cancel",
+    "error": "Failed to create item"
+  },
+  "qrcode": {
+    "back": "Back to menu",
+    "title": "QR code",
+    "publicUrl": "Public menu URL",
+    "help": "Scan this QR code with any smartphone to open your menu"
+  },
+    "uploadimages": {
+    "label": "Image",
+    "logoLabel": "Image",
+    "optional": "optional",
+    "button": "Upload",
+    "allowed": "PNG, JPG up to 4MB",
+    "remove": "Remove",
+    "error": "Upload failed",
+    "previewAlt": "Preview"
+  },
+  "mainpage": {
+    "brand": "DMENU",
+
+    "navSignIn": "Sign in",
+    "navStartFree": "Start free",
+
+    "eyebrow": "Digital menus made simple",
+
+    "headlineMain": "Your restaurant menu,",
+    "headlineHighlight": "reinvented for mobile",
+
+    "subhead": "dmenu lets you create a clean, modern digital menu in minutes. Manage items, upload photos and share instantly with a QR code — no printing, no apps, no confusion.",
+
+    "ctaPrimary": "Create your digital menu",
+    "ctaSecondary": "I already have an account",
+
+    "trust": "Used by cafés, restaurants and bars to replace paper menus",
+
+    "feature1Title": "Manage everything in one place",
+    "feature1Desc": "Categories, items, prices and photos — all from a simple dashboard.",
+
+    "feature2Title": "Instant QR & public link",
+    "feature2Desc": "Your menu is live immediately. Share it anywhere.",
+
+    "feature3Title": "Designed for customers",
+    "feature3Desc": "Fast loading, mobile-first and easy to read.",
+
+    "feature4Title": "No app downloads",
+    "feature4Desc": "Works in any browser on any device.",
+
+    "feature5Title": "Edit anytime",
+    "feature5Desc": "Update prices or items instantly — no reprinting.",
+
+    "previewDashboardTitle": "Dashboard",
+    "previewDashboardDesc": "Build and manage your menu easily.",
+
+    "previewCustomerTitle": "Customer view",
+    "previewCustomerDesc": "What your guests see on their phones.",
+
+    "contactTitle": "Have questions or need help?",
+    "contactDesc": "We’re happy to help you get started or answer any questions about dmenu.",
+
+    "finalTitle": "Ready to go digital?",
+    "finalDesc": "Create your first menu in under 5 minutes.",
+    "finalButton": "Get started for free",
+
+    "footer": "All rights reserved.",
+     "contactEmailLabel": "Email:",
+    "contactEmail": "support@tlab",
+    "contactInstagramLabel": "Instagram:",
+    "contactInstagram": "@dmenu.tlab"
+  }
+}
