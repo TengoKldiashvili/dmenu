@@ -14,7 +14,8 @@
     "submit": "Sign in",
     "loading": "Signing in…",
     "noAccount": "Don’t have an account?",
-    "create": "Create one"
+    "create": "Create one",
+    "forgotPassword":"Forgot password?"
   },
 
   "register": {
