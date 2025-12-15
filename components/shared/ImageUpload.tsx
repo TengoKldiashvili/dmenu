@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { UploadDropzone } from "@/lib/uploadthing";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
+import { AlertTriangle } from "lucide-react";
 
 interface ImageUploadProps {
   value?: string;
@@ -11,16 +13,23 @@ interface ImageUploadProps {
 
 export default function ImageUpload({ value, onChange }: ImageUploadProps) {
   const t = useTranslations("uploadimages");
+  const [error, setError] = useState<string | null>(null);
 
   return (
     <div className="space-y-3">
-      {/* LABEL */}
+      {error && (
+        <div className="flex items-start gap-2 rounded-xl border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-400">
+          <AlertTriangle className="w-4 h-4 mt-0.5" />
+          <span>{error}</span>
+        </div>
+      )}
+
       <label className="block text-sm font-medium text-white">
         {t("label")}
       </label>
 
       {value ? (
-        <div className="relative w-32 h-32 rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+        <div className="relative w-32 h-32 mx-auto rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
           <Image
             src={value}
             alt={t("previewAlt")}
@@ -30,44 +39,41 @@ export default function ImageUpload({ value, onChange }: ImageUploadProps) {
 
           <button
             type="button"
-            onClick={() => onChange("")}
-            className="
-              absolute bottom-2 right-2
-              bg-gray-950/80
-              text-xs px-2 py-1
-              rounded-md
-              border border-white/20
-              text-white/70
-              hover:text-white
-              hover:border-white/50
-              transition
-            "
+            onClick={() => {
+              onChange("");
+              setError(null);
+            }}
+            className="absolute top-2 right-2 rounded-full p-1.5 bg-gray-950/80 text-white/60 hover:text-white transition"
+            title={t("remove")}
           >
-            {t("remove")}
+            ✕
           </button>
         </div>
       ) : (
         <UploadDropzone
           endpoint="itemImageUploader"
-          appearance={{
-            container:
-              "border border-dashed border-white/20 rounded-2xl p-6 bg-white/5 text-center backdrop-blur",
-            button:
-              "bg-gray-950 text-white hover:bg-gray-900 transition rounded-md px-4 py-2 text-sm font-medium border border-white/20",
-            label: "text-white/70 text-sm",
-            allowedContent: "text-white/40 text-xs",
-            uploadIcon: "text-white/40",
-          }}
-          content={{
-            button: t("button"),
-            label: t("label"),
-            allowedContent: t("allowed"),
-          }}
           onClientUploadComplete={(res) => {
             const url = res?.[0]?.url;
-            if (url) onChange(url);
+            if (url) {
+              onChange(url);
+              setError(null);
+            }
           }}
-          onUploadError={() => alert(t("error"))}
+          onUploadError={(err) => {
+            if (err.message.includes("File size")) {
+              setError(t("tooLarge"));
+            } else {
+              setError(t("error"));
+            }
+          }}
+          appearance={{
+            container:
+              "border border-white/20 rounded-xl bg-transparent hover:border-white/40 transition",
+            label: "text-white/80 text-sm",
+            uploadIcon: "text-white/60",
+            button:
+              "bg-transparent text-white/80 text-sm font-medium",
+          }}
         />
       )}
     </div>

@@ -16,18 +16,6 @@ model User {
   createdAt DateTime @default(now())
 }
 
-model Menu {
-  id          String     @id @default(uuid())
-  title       String
-  description String?
-  theme       String     @default("light")
-  logoUrl     String?
-  user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
-  userId      String
-  categories  Category[]
-  createdAt   DateTime   @default(now())
-}
-
 model Category {
   id        String   @id @default(uuid())
   name      String
@@ -48,3 +36,21 @@ model Item {
   createdAt   DateTime @default(now())
 }
 
+model Menu {
+  id          String      @id @default(uuid())
+  title       String?
+  description String?
+  theme       String      @default("light")
+  logoUrl     String?
+  status      MenuStatus  @default(DRAFT)
+
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId      String
+  categories  Category[]
+  createdAt   DateTime    @default(now())
+}
+
+enum MenuStatus {
+  DRAFT
+  ACTIVE
+}

@@ -1,139 +1,31 @@
-"use client";
+import { redirect } from "next/navigation";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth-options";
+import { db } from "@/lib/db";
+import { LIMITS } from "@/lib/limits";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
-import { useTranslations, useLocale } from "next-intl";
+import CreateMenuPage from "./CreateMenuPage";
 
-import LogoUpload from "@/components/shared/LogoUpload";
-import ThemePicker from "./ThemePicker";
+export default async function CreateMenuPageWrapper({
+  params,
+}: {
+  params: { locale: string };
+}) {
+  const { locale } = params;
 
-export default function CreateMenuPage() {
-  const t = useTranslations("createMenu");
-  const locale = useLocale();
-  const router = useRouter();
+  const session = await getServerSession(authOptions);
+  if (!session?.user?.id) {
+    redirect(`/${locale}/login`);
+  }
 
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [theme, setTheme] = useState("light");
-  const [logoUrl, setLogoUrl] = useState<string | null>(null);
+  const menusCount = await db.menu.count({
+    where: { userId: session.user.id },
+  });
 
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  // block the form for users who reached the free tier menu quota
+  if (menusCount >= LIMITS.FREE_MENU_LIMIT) {
+    redirect(`/${locale}/dashboard`);
+  }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError("");
-    setLoading(true);
-
-    try {
-      const res = await fetch("/api/menus", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          title,
-          description,
-          theme,
-          logoUrl,
-        }),
-      });
-
-      if (res.ok) {
-        const menu = await res.json();
-        router.push(`/${locale}/dashboard/menu/${menu.id}`);
-      } else {
-        const data = await res.json();
-        setError(data.error || t("error"));
-      }
-    } catch {
-      setError(t("error"));
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <div className="max-w-3xl mx-auto px-6 py-12">
-      {/* BACK */}
-      <Link
-        href={`/${locale}/dashboard`}
-        className="inline-flex items-center gap-2 mb-8 text-sm text-white/60 hover:text-white transition"
-      >
-        ← {t("back")}
-      </Link>
-
-      {/* TITLE */}
-      <h1 className="text-3xl font-semibold tracking-tight mb-12">
-        {t("title")}
-      </h1>
-
-      <form
-        onSubmit={handleSubmit}
-        className="rounded-3xl border border-white/10 bg-white/5 p-8 space-y-12 backdrop-blur"
-      >
-        {error && (
-          <div className="rounded-xl border border-red-500/30 bg-red-500/10 text-red-400 px-4 py-3">
-            {error}
-          </div>
-        )}
-
-        {/* BASIC INFO */}
-        <div className="space-y-6">
-          <div>
-            <label className="block text-sm text-white/70 mb-1">
-              {t("menuTitle")} *
-            </label>
-            <input
-              required
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              placeholder={t("menuTitlePlaceholder")}
-              className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:border-white/40 focus:outline-none"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm text-white/70 mb-1">
-              {t("description")}
-            </label>
-            <textarea
-              rows={3}
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              placeholder={t("descriptionPlaceholder")}
-              className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:border-white/40 focus:outline-none resize-none"
-            />
-          </div>
-        </div>
-
-        {/* LOGO */}
-        <div className="space-y-3">
-          <LogoUpload value={logoUrl} onChange={setLogoUrl} />
-        </div>
-
-        {/* THEME */}
-        <div className="space-y-3">
-          <ThemePicker value={theme} onChange={setTheme} />
-        </div>
-
-        {/* ACTIONS */}
-        <div className="flex items-center gap-4 pt-4">
-          <button
-            type="submit"
-            disabled={loading}
-            className="rounded-xl bg-white text-gray-950 text-sm font-medium px-6 py-2.5 hover:opacity-90 transition disabled:opacity-50"
-          >
-            {loading ? t("creating") : t("create")}
-          </button>
-
-          <Link
-            href={`/${locale}/dashboard`}
-            className="px-6 py-2.5 rounded-xl text-sm border border-white/20 text-white/70 hover:border-white/50 hover:text-white transition"
-          >
-            {t("cancel")}
-          </Link>
-        </div>
-      </form>
-    </div>
-  );
+  return <CreateMenuPage />;
 }

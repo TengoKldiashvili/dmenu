@@ -36,7 +36,6 @@ export default async function QRCodePage({
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
-      {/* BACK */}
       <Link
         href={`/${locale}/dashboard/menu/${menuId}`}
         className="inline-flex items-center gap-2 mb-8 text-sm text-white/60 hover:text-white transition"
@@ -44,26 +43,36 @@ export default async function QRCodePage({
         ← {t("back")}
       </Link>
 
-      {/* TITLE */}
-      <h1 className="text-3xl font-semibold tracking-tight mb-12">
+      <h1
+        className="
+          w-full
+          mb-12
+          font-semibold
+          leading-tight
+          tracking-tight
+          text-center sm:text-left
+          whitespace-nowrap
+          overflow-hidden
+          text-ellipsis
+          text-[clamp(1.25rem,5vw,1.875rem)]
+        "
+      >
         {t("title")}
       </h1>
 
-      {/* CARD */}
-      <div className="rounded-3xl border border-white/10 bg-white/5 p-10 text-center backdrop-blur">
-        <h2 className="text-xl font-medium mb-8">
+      <div className="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-10 text-center backdrop-blur">
+        <h2 className="text-xl font-medium mb-8 break-words">
           {menu.title}
         </h2>
 
-        {/* QR */}
         <div className="flex justify-center mb-10">
-          <div className="p-5 rounded-2xl border border-white/10 bg-white">
-            {/* QR stays white for scan reliability */}
-            <QRCodeSVG value={publicUrl} size={220} />
+          <div className="p-4 sm:p-5 rounded-2xl border border-white/10 bg-white">
+            <div className="scale-90 sm:scale-100 origin-center">
+              <QRCodeSVG value={publicUrl} size={220} />
+            </div>
           </div>
         </div>
 
-        {/* URL */}
         <div className="space-y-2">
           <p className="text-xs text-white/50">
             {t("publicUrl")}
@@ -79,7 +88,6 @@ export default async function QRCodePage({
           </a>
         </div>
 
-        {/* HELP */}
         <p className="text-xs text-white/40 mt-10">
           {t("help")}
         </p>

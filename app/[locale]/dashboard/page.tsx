@@ -1,8 +1,12 @@
 import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/lib/auth";
-import { db } from "@/lib/db";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
+
+import { getCurrentUser } from "@/lib/auth";
+import { db } from "@/lib/db";
+import DeleteMenuButton from "@/components/dashboard/DeleteMenuButton";
+
+const FREE_MENU_LIMIT = 1;
 
 export default async function DashboardPage({
   params,
@@ -27,10 +31,11 @@ export default async function DashboardPage({
     orderBy: { createdAt: "desc" },
   });
 
+  const hasMenu = menus.length >= FREE_MENU_LIMIT;
+
   return (
     <div>
-      {/* HEADER */}
-      <div className="flex items-center justify-between mb-12">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-12">
         <div>
           <h1 className="text-3xl font-semibold tracking-tight">
             {t("title")}
@@ -40,24 +45,41 @@ export default async function DashboardPage({
           </p>
         </div>
 
-        <Link
-          href={`/${locale}/dashboard/create-menu`}
-          className="
-            px-6 py-2.5 rounded-xl
-            bg-white text-gray-950 text-sm font-medium
-            hover:opacity-90 transition
-          "
-        >
-          {t("create")}
-        </Link>
+        {!hasMenu ? (
+          <Link
+            href={`/${locale}/dashboard/create-menu`}
+            className="
+              px-6 py-2.5 rounded-xl
+              bg-white text-gray-950
+              text-sm font-medium
+              hover:opacity-90 transition
+            "
+          >
+            {t("create")}
+          </Link>
+        ) : (
+          <button
+            disabled
+            title={t("limitReached")}
+            className="
+              px-6 py-2.5 rounded-xl
+              bg-white/10
+              text-white/40
+              text-sm font-medium
+              cursor-not-allowed
+            "
+          >
+            {t("create")}
+          </button>
+        )}
       </div>
 
-      {/* EMPTY STATE */}
       {menus.length === 0 ? (
         <div className="rounded-3xl border border-white/10 bg-white/5 py-24 text-center">
           <p className="text-white/60 mb-6">
             {t("empty")}
           </p>
+
           <Link
             href={`/${locale}/dashboard/create-menu`}
             className="text-sm text-white hover:underline"
@@ -78,7 +100,8 @@ export default async function DashboardPage({
                 key={menu.id}
                 href={`/${locale}/dashboard/menu/${menu.id}`}
                 className="
-                  group rounded-2xl p-6
+                  relative group
+                  rounded-2xl p-6
                   border border-white/10
                   bg-white/5
                   transition-all
@@ -104,6 +127,11 @@ export default async function DashboardPage({
                     {itemsCount} {t("items")}
                   </span>
                 </div>
+
+                <DeleteMenuButton
+                  menuId={menu.id}
+                  locale={locale}
+                />
               </Link>
             );
           })}

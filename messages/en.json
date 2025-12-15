@@ -4,7 +4,8 @@
     "cancel": "Cancel",
     "create": "Create",
     "save": "Save"
-},
+  },
+
   "auth": {
     "title": "Sign in",
     "subtitle": "Access your dashboard",
@@ -15,11 +16,12 @@
     "noAccount": "Don’t have an account?",
     "create": "Create one"
   },
+
   "register": {
-    "title": "Create account",
+    "title": "Create an account",
     "subtitle": "Start building your digital menu",
     "name": "Name",
-    "nameOptional": "optional",
+    "nameOptional": "Optional",
     "email": "Email",
     "password": "Password",
     "submit": "Create account",
@@ -27,73 +29,94 @@
     "haveAccount": "Already have an account?",
     "signIn": "Sign in"
   },
+
   "navigation": {
     "backHome": "Back to home"
   },
+
   "dashboard": {
     "title": "Your menus",
     "subtitle": "Manage your digital menus",
     "create": "Create menu",
     "empty": "You don’t have any menus yet",
     "emptyCta": "Create your first menu",
-    "categories": "categories",
-    "items": "items"
+    "categories": "Categories",
+    "items": "Items",
+    "limitReached":"The free plan allows only one menu. Upgrade to create more."
   },
+
   "buttons": {
-    "signOut": "Sign Out"
+    "signOut": "Sign out"
   },
+
   "createMenu": {
     "back": "Back to dashboard",
-    "title": "Create new menu",
+    "title": "Create a new menu",
     "menuTitle": "Menu title",
     "menuTitlePlaceholder": "e.g. Summer Menu",
     "description": "Description",
     "descriptionPlaceholder": "Optional short description",
     "create": "Create menu",
-    "creating": "Creating...",
+    "creating": "Creating…",
     "cancel": "Cancel",
-    "error": "Something went wrong"
+    "error": "Something went wrong",
+    "checking": "Checking…"
   },
+
   "logo": {
-  "label": "Logo",
-  "optional": "optional",
-  "button": "Choose file",
-  "allowed": "Image (max 2MB)",
-  "remove": "Remove",
-  "alt": "Logo",
-  "error": "Logo upload failed"
-},
-  "upload": {
-    "label": "Drag and drop or choose a file",
-    "allowed": "Image (max 2MB)",
-    "button": "Choose file"
+    "label": "Logo",
+    "optional": "Optional",
+    "button": "Choose file",
+    "allowed": "Image (max 4MB)",
+    "remove": "Remove",
+    "alt": "Logo",
+    "error": "Logo upload failed. The file is larger than 4MB.",
+    "fileTooLarge": "File is too large (maximum 4MB)",
+    "upload": "Upload"
   },
+
   "theme": {
     "label": "Menu theme",
     "light": "Light",
     "minimal": "Minimal",
     "dark": "Dark",
-    "elegant": "Elegant"
+    "elegant": "Elegant",
+    "selected": "Selected"
   },
+
   "menuBuilder": {
     "back": "Back to dashboard",
-    "viewQr": "View QR",
+    "viewQr": "View QR code",
     "addCategory": "Add category",
     "addItem": "Add item",
     "emptyTitle": "No categories yet",
     "emptyCta": "Create your first category"
   },
+
   "category": {
+    "edit": "Edit",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
     "delete": "Delete",
     "deleting": "Deleting…",
-    "confirmDelete": "Delete category \"{name}\" and all its items?",
+    "confirmDelete": "Delete the category \"{name}\" and all its items?",
     "empty": "No items in this category yet."
   },
+
   "item": {
+    "name":"Name",
+    "price":"Price",
+    "edit": "Edit",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
     "delete": "Delete",
     "deleting": "Deleting…",
-    "confirmDelete": "Delete item \"{name}\"?"
+    "confirmDelete": "Delete the item \"{name}\"?",
+    "description": "Description"
   },
+
   "addCategory": {
     "back": "Back to menu",
     "title": "Add category",
@@ -104,6 +127,7 @@
     "cancel": "Cancel",
     "error": "Failed to create category"
   },
+
   "addItem": {
     "back": "Back to menu",
     "title": "Add item",
@@ -121,22 +145,26 @@
     "cancel": "Cancel",
     "error": "Failed to create item"
   },
+
   "qrcode": {
     "back": "Back to menu",
     "title": "QR code",
     "publicUrl": "Public menu URL",
     "help": "Scan this QR code with any smartphone to open your menu"
   },
-    "uploadimages": {
+
+  "uploadimages": {
     "label": "Image",
     "logoLabel": "Image",
-    "optional": "optional",
+    "optional": "Optional",
     "button": "Upload",
-    "allowed": "PNG, JPG up to 4MB",
+    "allowed": "PNG or JPG, up to 4MB",
     "remove": "Remove",
-    "error": "Upload failed",
-    "previewAlt": "Preview"
+    "error": "Upload failed. The file is larger than 4MB.",
+    "previewAlt": "Preview",
+    "tooLarge": "File is too large (maximum 4MB)"
   },
+
   "mainpage": {
     "brand": "DMENU",
 
@@ -148,21 +176,21 @@
     "headlineMain": "Your restaurant menu,",
     "headlineHighlight": "reinvented for mobile",
 
-    "subhead": "dmenu lets you create a clean, modern digital menu in minutes. Manage items, upload photos and share instantly with a QR code — no printing, no apps, no confusion.",
+    "subhead": "dmenu lets you create a clean, modern digital menu in minutes. Manage items, upload photos, and share instantly with a QR code — no printing, no apps, no confusion.",
 
     "ctaPrimary": "Create your digital menu",
     "ctaSecondary": "I already have an account",
 
-    "trust": "Used by cafés, restaurants and bars to replace paper menus",
+    "trust": "Used by cafés, restaurants, and bars to replace paper menus",
 
     "feature1Title": "Manage everything in one place",
-    "feature1Desc": "Categories, items, prices and photos — all from a simple dashboard.",
+    "feature1Desc": "Categories, items, prices, and photos — all from a simple dashboard.",
 
-    "feature2Title": "Instant QR & public link",
-    "feature2Desc": "Your menu is live immediately. Share it anywhere.",
+    "feature2Title": "Instant QR code & public link",
+    "feature2Desc": "Your menu goes live immediately. Share it anywhere.",
 
     "feature3Title": "Designed for customers",
-    "feature3Desc": "Fast loading, mobile-first and easy to read.",
+    "feature3Desc": "Fast-loading, mobile-first, and easy to read.",
 
     "feature4Title": "No app downloads",
     "feature4Desc": "Works in any browser on any device.",
@@ -171,7 +199,7 @@
     "feature5Desc": "Update prices or items instantly — no reprinting.",
 
     "previewDashboardTitle": "Dashboard",
-    "previewDashboardDesc": "Build and manage your menu easily.",
+    "previewDashboardDesc": "Build and manage your menu with ease.",
 
     "previewCustomerTitle": "Customer view",
     "previewCustomerDesc": "What your guests see on their phones.",
@@ -184,9 +212,14 @@
     "finalButton": "Get started for free",
 
     "footer": "All rights reserved.",
-     "contactEmailLabel": "Email:",
+
+    "contactEmailLabel": "Email:",
     "contactEmail": "support@tlab",
     "contactInstagramLabel": "Instagram:",
     "contactInstagram": "@dmenu.tlab"
-  }
+  },
+
+  "unauthorized": "Unauthorized",
+  "menuLimitReached": "The free plan allows only one menu. Upgrade to create more.",
+  "titleRequired": "Title is required"
 }

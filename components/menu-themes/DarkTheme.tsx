@@ -5,8 +5,6 @@ export default function DarkTheme({ menu }: { menu: PublicMenu }) {
   return (
     <div className="min-h-screen bg-zinc-900 text-zinc-100">
       <div className="max-w-3xl mx-auto px-5 py-14">
-
-        {/* LOGO */}
         {menu.logoUrl && (
           <div className="mb-10 text-center">
             <Image
@@ -19,19 +17,16 @@ export default function DarkTheme({ menu }: { menu: PublicMenu }) {
           </div>
         )}
 
-        {/* TITLE */}
         <h1 className="text-4xl font-bold text-center mb-3">
           {menu.title}
         </h1>
 
-        {/* DESCRIPTION */}
         {menu.description && (
           <p className="text-center text-zinc-400 mb-12">
             {menu.description}
           </p>
         )}
 
-        {/* CATEGORIES */}
         <div className="space-y-14">
           {menu.categories.map((category) => (
             <section key={category.id}>
@@ -45,7 +40,6 @@ export default function DarkTheme({ menu }: { menu: PublicMenu }) {
                     key={item.id}
                     className="flex gap-4 p-4 rounded-xl bg-zinc-800/60 hover:bg-zinc-800 transition-colors"
                   >
-                    {/* IMAGE */}
                     {item.imageUrl && (
                       <Image
                         src={item.imageUrl}
@@ -56,7 +50,6 @@ export default function DarkTheme({ menu }: { menu: PublicMenu }) {
                       />
                     )}
 
-                    {/* INFO */}
                     <div className="flex-1">
                       <div className="flex justify-between items-start">
                         <h3 className="font-medium text-lg">

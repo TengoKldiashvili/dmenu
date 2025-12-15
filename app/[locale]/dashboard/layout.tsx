@@ -17,13 +17,11 @@ export default async function DashboardLayout({
 
   return (
     <div className="min-h-screen bg-gray-950 text-white overflow-hidden">
-      {/* BACKGROUND GLOW */}
       <div className="pointer-events-none fixed inset-0">
         <div className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full bg-white/10 blur-3xl" />
         <div className="absolute top-20 right-0 w-[650px] h-[650px] rounded-full bg-white/10 blur-3xl" />
       </div>
 
-      {/* NAVBAR */}
       <nav className="relative sticky top-0 z-40 border-b border-white/10 bg-gray-950/80 backdrop-blur">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link
@@ -42,7 +40,6 @@ export default async function DashboardLayout({
         </div>
       </nav>
 
-      {/* CONTENT */}
       <main className="relative max-w-7xl mx-auto px-6 py-12">
         {children}
       </main>

@@ -12,7 +12,7 @@ export const uploadRouter = {
     }),
 
   logoUploader: f({
-    image: { maxFileSize: "2MB", maxFileCount: 1 },
+    image: { maxFileSize: "4MB", maxFileCount: 1 },
   })
     .middleware(async () => ({}))
     .onUploadComplete(({ file }) => {

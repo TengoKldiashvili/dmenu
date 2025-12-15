@@ -43,7 +43,6 @@ export default function AddCategoryPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
-      {/* BACK */}
       <Link
         href={`/${locale}/dashboard/menu/${menuId}`}
         className="inline-flex items-center gap-2 mb-8 text-sm text-white/60 hover:text-white transition"
@@ -51,7 +50,6 @@ export default function AddCategoryPage() {
         ← {t("back")}
       </Link>
 
-      {/* TITLE */}
       <h1 className="text-3xl font-semibold tracking-tight mb-12">
         {t("title")}
       </h1>
@@ -66,7 +64,6 @@ export default function AddCategoryPage() {
           </div>
         )}
 
-        {/* FIELD */}
         <div>
           <label className="block text-sm text-white/70 mb-1">
             {t("nameLabel")}
@@ -88,12 +85,18 @@ export default function AddCategoryPage() {
           />
         </div>
 
-        {/* ACTIONS */}
-        <div className="flex items-center gap-4 pt-2">
+        <div
+          className="
+            pt-2 gap-4
+            flex flex-col
+            sm:flex-row sm:items-center
+          "
+        >
           <button
             type="submit"
             disabled={loading}
             className="
+              w-full sm:w-auto
               rounded-xl
               bg-white
               text-gray-950
@@ -109,6 +112,8 @@ export default function AddCategoryPage() {
           <Link
             href={`/${locale}/dashboard/menu/${menuId}`}
             className="
+              w-full sm:w-auto
+              text-center
               px-6 py-2.5 rounded-xl text-sm
               border border-white/20
               text-white/70

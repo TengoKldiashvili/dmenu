@@ -16,40 +16,39 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setError("");
-  setLoading(true);
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
 
-  try {
-    const result = await signIn("credentials", {
-      email,
-      password,
-      redirect: false,
-    });
-    if (result?.error) {
-      setError(
-        locale === "ka"
-          ? "ელფოსტა ან პაროლი არასწორია"
-          : "Invalid email or password"
-      );
+    try {
+      const result = await signIn("credentials", {
+        email,
+        password,
+        redirect: false,
+      });
+      if (result?.error) {
+        setError(
+          locale === "ka"
+            ? "ელფოსტა ან პაროლი არასწორია"
+            : "Invalid email or password"
+        );
+        setLoading(false);
+        return;
+      }
+
+      router.push(`/${locale}/dashboard`);
+      router.refresh();
+    } catch (err) {
+      router.push(`/${locale}/error-page`);
+    } finally {
       setLoading(false);
-      return;
     }
-
-    router.push(`/${locale}/dashboard`);
-    router.refresh();
-  } catch (err) {
-    router.push(`/${locale}/error-page`);
-  } finally {
-    setLoading(false);
-  }
-};
+  };
 
   return (
     <div className="w-full max-w-md">
       <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-        {/* HEADER */}
         <div className="text-center mb-10">
           <h1 className="text-3xl font-semibold tracking-tight">
             {t("title")}
@@ -59,7 +58,6 @@ const handleSubmit = async (e: React.FormEvent) => {
           </p>
         </div>
 
-        {/* FORM */}
         <form onSubmit={handleSubmit} className="space-y-6">
           {error && (
             <div className="rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-400">

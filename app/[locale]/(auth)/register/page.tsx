@@ -44,7 +44,6 @@ export default function RegisterPage() {
   return (
     <div className="w-full max-w-md">
       <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-        {/* HEADER */}
         <div className="text-center mb-10">
           <h1 className="text-3xl font-semibold tracking-tight text-white">
             {t("title")}
@@ -61,7 +60,6 @@ export default function RegisterPage() {
             </div>
           )}
 
-          {/* NAME */}
           <div>
             <label className="block text-sm text-white/70 mb-1">
               {t("name")}{" "}
@@ -76,7 +74,6 @@ export default function RegisterPage() {
             />
           </div>
 
-          {/* EMAIL */}
           <div>
             <label className="block text-sm text-white/70 mb-1">
               {t("email")}
@@ -90,7 +87,6 @@ export default function RegisterPage() {
             />
           </div>
 
-          {/* PASSWORD */}
           <div>
             <label className="block text-sm text-white/70 mb-1">
               {t("password")}
@@ -104,7 +100,6 @@ export default function RegisterPage() {
             />
           </div>
 
-          {/* SUBMIT */}
           <button
             type="submit"
             disabled={loading}
@@ -113,7 +108,6 @@ export default function RegisterPage() {
             {loading ? t("loading") : t("submit")}
           </button>
 
-          {/* FOOTER */}
           <p className="text-center text-sm text-white/60">
             {t("haveAccount")}{" "}
             <Link

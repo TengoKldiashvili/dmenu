@@ -13,77 +13,52 @@ export default async function Home({
     locale,
     namespace: "mainpage",
   });
+
   return (
     <div className="min-h-screen bg-gray-950 text-white overflow-hidden">
-      {/* BACKGROUND GLOW */}
       <div className="pointer-events-none fixed inset-0">
         <div className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full bg-white/10 blur-3xl" />
         <div className="absolute top-20 right-0 w-[650px] h-[650px] rounded-full bg-white/10 blur-3xl" />
       </div>
 
-      {/* NAV */}
-   <nav className="relative max-w-7xl mx-auto px-6 py-6">
-  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-    
-    <h1 className="text-xl font-semibold tracking-tight">
-      {t("brand")}
-    </h1>
+      <nav className="relative max-w-7xl mx-auto px-6 py-5">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center justify-between">
+            <h1 className="text-xl font-semibold tracking-tight">{t("brand")}</h1>
+            <div className="sm:hidden">
+              <LanguageSwitch locale={locale} />
+            </div>
+          </div>
 
-    <div className="flex items-center gap-5 text-sm">
-      <LanguageSwitch locale={locale} />
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
+            <div className="hidden sm:block">
+              <LanguageSwitch locale={locale} />
+            </div>
+            <Link
+              href={`/${locale}/login`}
+              className="text-sm text-white/60 hover:text-white transition text-center sm:text-left"
+            >
+              {t("navSignIn")}
+            </Link>
+            <Link
+              href={`/${locale}/register`}
+              className="w-full sm:w-auto text-center px-4 py-2.5 rounded-xl bg-white text-gray-950 text-sm font-medium hover:opacity-90 transition"
+            >
+              {t("navStartFree")}
+            </Link>
+          </div>
+        </div>
+      </nav>
 
-      <Link
-        href={`/${locale}/login`}
-        className="text-white/60 hover:text-white transition"
-      >
-        {t("navSignIn")}
-      </Link>
-
-      <Link
-        href={`/${locale}/register`}
-        className="px-4 py-2 rounded-xl bg-white text-gray-950 font-medium hover:opacity-90 transition"
-      >
-        {t("navStartFree")}
-      </Link>
-    </div>
-
-  </div>
-</nav>
-
-      {/* HERO */}
       <main className="relative max-w-6xl mx-auto px-6 py-28">
         <div className="rounded-3xl border border-white/10 bg-white/5 p-10 md:p-16">
-          {/* EYEBROW */}
-          <p className="text-xs text-white/50 uppercase tracking-wide">
-            {t("eyebrow")}
-          </p>
-
-          {/* HEADLINE */}
-          
-          <h2
-  className="
-    mt-6
-    text-[1.9rem] leading-tight
-    sm:text-5xl md:text-6xl
-    font-semibold
-    tracking-tight
-    max-w-full
-    break-words
-  "
-> 
+          <p className="text-xs text-white/50 uppercase tracking-wide">{t("eyebrow")}</p>
+          <h2 className="mt-6 text-[1.9rem] leading-tight sm:text-5xl md:text-6xl font-semibold tracking-tight max-w-full break-words">
             {t("headlineMain")}
-            <span className="text-white/60">
-              {" "}
-              {t("headlineHighlight")}
-            </span>
+            <span className="text-white/60"> {t("headlineHighlight")}</span>
           </h2>
+          <p className="mt-6 text-lg text-white/70 max-w-2xl">{t("subhead")}</p>
 
-          {/* SUBHEAD */}
-          <p className="mt-6 text-lg text-white/70 max-w-2xl">
-            {t("subhead")}
-          </p>
-
-          {/* PRIMARY CTA */}
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href={`/${locale}/register`}
@@ -91,7 +66,6 @@ export default async function Home({
             >
               {t("ctaPrimary")}
             </Link>
-
             <Link
               href={`/${locale}/login`}
               className="px-8 py-3 rounded-xl border border-white/20 text-sm font-medium hover:border-white/60 transition"
@@ -100,12 +74,8 @@ export default async function Home({
             </Link>
           </div>
 
-          {/* TRUST LINE */}
-          <p className="mt-6 text-xs text-white/40">
-            {t("trust")}
-          </p>
+          <p className="mt-6 text-xs text-white/40">{t("trust")}</p>
 
-          {/* FEATURES */}
           <div className="mt-16 grid md:grid-cols-3 gap-6">
             {[
               ["feature1Title", "feature1Desc"],
@@ -114,77 +84,40 @@ export default async function Home({
               ["feature4Title", "feature4Desc"],
               ["feature5Title", "feature5Desc"],
             ].map(([titleKey, descKey]) => (
-              <div
-                key={titleKey}
-                className="rounded-2xl bg-gray-950/40 border border-white/10 p-6"
-              >
-                <p className="text-sm font-medium">
-                  {t(titleKey)}
-                </p>
-                <p className="text-sm text-white/60 mt-2">
-                  {t(descKey)}
-                </p>
+              <div key={titleKey} className="rounded-2xl bg-gray-950/40 border border-white/10 p-6">
+                <p className="text-sm font-medium">{t(titleKey)}</p>
+                <p className="text-sm text-white/60 mt-2">{t(descKey)}</p>
               </div>
             ))}
           </div>
 
-          {/* PREVIEW */}
           <div className="mt-16 grid md:grid-cols-2 gap-6">
             <div className="rounded-2xl bg-gray-950/40 border border-white/10 p-6">
-              <p className="text-sm font-medium">
-                {t("previewDashboardTitle")}
-              </p>
-              <p className="text-sm text-white/60 mt-2">
-                {t("previewDashboardDesc")}
-              </p>
+              <p className="text-sm font-medium">{t("previewDashboardTitle")}</p>
+              <p className="text-sm text-white/60 mt-2">{t("previewDashboardDesc")}</p>
             </div>
-
             <div className="rounded-2xl bg-gray-950/40 border border-white/10 p-6">
-              <p className="text-sm font-medium">
-                {t("previewCustomerTitle")}
+              <p className="text-sm font-medium">{t("previewCustomerTitle")}</p>
+              <p className="text-sm text-white/60 mt-2">{t("previewCustomerDesc")}</p>
+            </div>
+          </div>
+
+          <div className="mt-20 border-t border-white/10 pt-16 text-center">
+            <h3 className="text-3xl font-semibold tracking-tight">{t("contactTitle")}</h3>
+            <p className="text-white/60 mt-3 max-w-xl mx-auto">{t("contactDesc")}</p>
+            <div className="mt-6 flex flex-col items-center gap-2 text-sm text-white/70">
+              <p>
+                {t("contactEmailLabel")} <span className="text-white">{t("contactEmail")}</span>
               </p>
-              <p className="text-sm text-white/60 mt-2">
-                {t("previewCustomerDesc")}
+              <p>
+                {t("contactInstagramLabel")} <span className="text-white">{t("contactInstagram")}</span>
               </p>
             </div>
           </div>
 
-          {/* CONTACT */}
-        {/* CONTACT */}
-<div className="mt-20 border-t border-white/10 pt-16 text-center">
-  <h3 className="text-3xl font-semibold tracking-tight">
-    {t("contactTitle")}
-  </h3>
-
-  <p className="text-white/60 mt-3 max-w-xl mx-auto">
-    {t("contactDesc")}
-  </p>
-
-  <div className="mt-6 flex flex-col items-center gap-2 text-sm text-white/70">
-    <p>
-      {t("contactEmailLabel")}{" "}
-      <span className="text-white">
-        {t("contactEmail")}
-      </span>
-    </p>
-    <p>
-      {t("contactInstagramLabel")}{" "}
-      <span className="text-white">
-        {t("contactInstagram")}
-      </span>
-    </p>
-  </div>
-</div>
-
-
-          {/* FINAL CTA */}
           <div className="mt-20 text-center">
-            <h3 className="text-3xl font-semibold tracking-tight">
-              {t("finalTitle")}
-            </h3>
-            <p className="text-white/60 mt-3">
-              {t("finalDesc")}
-            </p>
+            <h3 className="text-3xl font-semibold tracking-tight">{t("finalTitle")}</h3>
+            <p className="text-white/60 mt-3">{t("finalDesc")}</p>
             <Link
               href={`/${locale}/register`}
               className="inline-block mt-6 px-10 py-3 rounded-xl bg-white text-gray-950 text-sm font-medium hover:opacity-90 transition"

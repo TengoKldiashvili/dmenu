@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 
-export default function GlobalError({
-  reset,
-}: {
+export default function GlobalError({}: {
   reset: () => void;
 }) {
   return (

@@ -12,13 +12,23 @@ const THEMES = [
 type Props = {
   value: string;
   onChange: (theme: string) => void;
+  disabled?: boolean;
 };
 
-export default function ThemePicker({ value, onChange }: Props) {
+export default function ThemePicker({
+  value,
+  onChange,
+  disabled = false,
+}: Props) {
   const t = useTranslations("theme");
 
   return (
-    <div className="space-y-4">
+    <div
+      className={`
+        space-y-4
+        ${disabled ? "opacity-50 pointer-events-none" : ""}
+      `}
+    >
       <label className="text-sm font-medium text-white">
         {t("label")}
       </label>
@@ -42,7 +52,6 @@ export default function ThemePicker({ value, onChange }: Props) {
                 }
               `}
             >
-              {/* PREVIEW */}
               <div className="aspect-[3/4] bg-gray-950/60">
                 <img
                   src={theme.preview}
@@ -51,7 +60,6 @@ export default function ThemePicker({ value, onChange }: Props) {
                 />
               </div>
 
-              {/* LABEL */}
               <div className="p-3">
                 <p
                   className={`
@@ -64,7 +72,7 @@ export default function ThemePicker({ value, onChange }: Props) {
 
                 {active && (
                   <p className="text-xs text-white/50 mt-1">
-                    Selected
+                    {t("selected")}
                   </p>
                 )}
               </div>

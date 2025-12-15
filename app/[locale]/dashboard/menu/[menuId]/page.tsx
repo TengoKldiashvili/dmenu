@@ -37,7 +37,6 @@ export default async function MenuBuilderPage({
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-12">
-      {/* HEADER */}
       <div className="mb-12">
         <Link
           href={`/${locale}/dashboard`}
@@ -48,7 +47,17 @@ export default async function MenuBuilderPage({
 
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
           <div>
-            <h1 className="text-3xl font-semibold tracking-tight">
+            <h1
+  className="
+    w-full
+    font-semibold tracking-tight
+    leading-tight
+    text-[clamp(1.25rem,5vw,1.875rem)]
+    whitespace-nowrap
+    overflow-hidden
+    text-ellipsis
+  "
+>
               {menu.title}
             </h1>
 
@@ -73,7 +82,6 @@ export default async function MenuBuilderPage({
         </div>
       </div>
 
-      {/* ACTIONS */}
       <div className="mb-10 flex flex-wrap gap-3">
         <Link
           href={`/${locale}/dashboard/menu/${menuId}/add-category`}
@@ -106,7 +114,6 @@ export default async function MenuBuilderPage({
         )}
       </div>
 
-      {/* CONTENT */}
       {menu.categories.length === 0 ? (
         <div className="rounded-3xl border border-white/10 bg-white/5 py-24 text-center backdrop-blur">
           <p className="text-white/60 mb-6">

@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-
 import ImageUpload from "@/components/shared/ImageUpload";
 
 export default function AddItemPage() {
@@ -15,7 +14,7 @@ export default function AddItemPage() {
   const locale = params.locale as string;
   const menuId = params.menuId as string;
 
-  const [isUploadingImage, setIsUploadingImage] = useState(false);
+  const [isUploadingImage] = useState(false);
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -74,7 +73,6 @@ export default function AddItemPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
-      {/* BACK */}
       <Link
         href={`/${locale}/dashboard/menu/${menuId}`}
         className="inline-flex items-center gap-2 mb-8 text-sm text-white/60 hover:text-white transition"
@@ -82,7 +80,6 @@ export default function AddItemPage() {
         ← {t("back")}
       </Link>
 
-      {/* TITLE */}
       <h1 className="text-3xl font-semibold tracking-tight mb-12">
         {t("title")}
       </h1>
@@ -97,7 +94,6 @@ export default function AddItemPage() {
           </div>
         )}
 
-        {/* CATEGORY */}
         <div>
           <label className="block text-sm text-white/70 mb-1">
             {t("category")}
@@ -124,7 +120,6 @@ export default function AddItemPage() {
           </select>
         </div>
 
-        {/* NAME */}
         <div>
           <label className="block text-sm text-white/70 mb-1">
             {t("name")}
@@ -146,7 +141,6 @@ export default function AddItemPage() {
           />
         </div>
 
-        {/* PRICE */}
         <div>
           <label className="block text-sm text-white/70 mb-1">
             {t("price")}{" "}
@@ -171,7 +165,6 @@ export default function AddItemPage() {
           />
         </div>
 
-        {/* DESCRIPTION */}
         <div>
           <label className="block text-sm text-white/70 mb-1">
             {t("description")}
@@ -194,15 +187,20 @@ export default function AddItemPage() {
           />
         </div>
 
-        {/* IMAGE (unchanged component) */}
         <ImageUpload value={imageUrl} onChange={setImageUrl} />
 
-        {/* ACTIONS */}
-        <div className="flex items-center gap-4 pt-2">
+        <div
+          className="
+            pt-2 gap-4
+            flex flex-col
+            sm:flex-row sm:items-center
+          "
+        >
           <button
             type="submit"
             disabled={loading || isUploadingImage}
             className="
+              w-full sm:w-auto
               rounded-xl
               bg-white
               text-gray-950
@@ -222,6 +220,8 @@ export default function AddItemPage() {
           <Link
             href={`/${locale}/dashboard/menu/${menuId}`}
             className="
+              w-full sm:w-auto
+              text-center
               px-6 py-2.5 rounded-xl text-sm
               border border-white/20
               text-white/70
