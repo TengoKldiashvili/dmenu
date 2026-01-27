@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth-options";
@@ -6,7 +8,7 @@ import { LIMITS } from "@/lib/limits";
 
 import CreateMenuPage from "./CreateMenuPage";
 
-export const dynamic = "force-dynamic";
+
 export default async function CreateMenuPageWrapper({
   params,
 }: {

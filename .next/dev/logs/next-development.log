@@ -4243,3 +4243,654 @@ Error parsing package.json file
   16 |   "dependencies": {
 
 package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:41.859] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:41.859] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:41.859] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:41.859] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:41.859] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.962] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.962] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:45.963] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:58:47.712] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:02:11.692] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:02:22.973] Server  LOG      ✓ Compiled in 273ms
+[01:02:23.693] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:02:25.697] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:02:30.694] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:02:37.700] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:02:40.695] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:02:59.705] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:03:01.703] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:03:04.692] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[01:03:10.709] Server  LOG      ✓ Compiled in 713ms
+[01:03:11.701] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3

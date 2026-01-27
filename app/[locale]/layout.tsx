@@ -1,3 +1,4 @@
+
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 

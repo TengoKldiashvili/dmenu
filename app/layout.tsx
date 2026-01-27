@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import { fontEn, fontKa } from "@/app/fonts";
 
