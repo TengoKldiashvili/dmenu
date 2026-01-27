@@ -182,7 +182,12 @@
     "headlineMain": "Redefining the standard of",
     "headlineHighlight": "Digital Dining",
     "subhead": "Transform your restaurant's identity with a menu system that feels as premium, curated, and exceptional as your cuisine",
-    
+    "qrExperienceTitle": "Experience the magic",
+"qrHeadline": "Scan to Preview Menu",
+"qrSubheadline": "Just point your phone camera at the QR code and see how fast your future menu loads.",
+"qrFeature1": "Instantly loads",
+"qrFeature2": "No app required",
+"qrFeature3": "Safe & Secure",
     "ctaPrimary": "Create Menu Free",
     "ctaSecondary": "View Live Demo",
     

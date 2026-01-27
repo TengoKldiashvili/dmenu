@@ -25,7 +25,6 @@ export default function MenuHighlightViewer({
 
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // ტექსტი ყოველთვის თეთრი (theme იგნორირებულია)
   const tokens = {
     bg: "bg-black",
     text: "text-white",

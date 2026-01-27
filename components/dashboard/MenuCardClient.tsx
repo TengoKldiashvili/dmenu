@@ -32,7 +32,6 @@ export default function MenuCardClient({ menu, locale }: Props) {
 
   return (
     <div className="relative rounded-2xl border border-white/10 bg-white/5 p-6">
-      {/* CONTENT ROW */}
       <div
         className={`
     flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center
@@ -40,7 +39,6 @@ export default function MenuCardClient({ menu, locale }: Props) {
     ${isEditing ? "opacity-40 pointer-events-none" : ""}
   `}
       >
-        {/* LOGO */}
         {menu.logoUrl && (
           <div
             className="
@@ -78,7 +76,6 @@ export default function MenuCardClient({ menu, locale }: Props) {
               {menu.title ?? t_2("empty")}
             </h2>
           </Link>
-          {/* TEXT CONTENT */}
 
           {menu.description && (
             <Link href={`/${locale}/dashboard/menu/${menu.id}`}>
@@ -89,7 +86,6 @@ export default function MenuCardClient({ menu, locale }: Props) {
           )}
 
           <div className="flex items-center justify-between gap-4">
-            {/* STATS */}
             <div className="flex text-xs text-white/50">
               <span>
                 {menu.categories.length} {t_2("categories")}
@@ -99,7 +95,6 @@ export default function MenuCardClient({ menu, locale }: Props) {
               </span>
             </div>
 
-            {/* QR BUTTON */}
             <Link
               href={`/${locale}/dashboard/menu/${menu.id}/qr`}
               className="
@@ -122,13 +117,11 @@ export default function MenuCardClient({ menu, locale }: Props) {
         </div>
       </div>
 
-      {/* ACTION BUTTONS */}
       <div className="absolute right-3 top-3 flex gap-2">
         <EditMenuButton onClick={() => setIsEditing((v) => !v)} />
         <DeleteMenuButton menuId={menu.id} locale={locale} />
       </div>
 
-      {/* EDIT DROPDOWN */}
       <AnimatePresence>
         {isEditing && (
           <motion.div

@@ -1,18 +1,803 @@
-[00:00:07.784] Server  LOG      ✓ Ready in 5.1s
-[00:00:11.564] Server  LOG      ○ Compiling /[locale] ...
-[00:00:24.348] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:47.184] Server  LOG      ✓ Compiled in 2.8s
-[00:02:51.871] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:52.906] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
-[00:03:02.174] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:54.544] Server  LOG      ✓ Compiled in 2.1s
-[00:06:57.827] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:03.589] Server  LOG      ✓ Compiled in 1808ms
-[00:07:10.205] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:09.562] Server  LOG      ✓ Compiled in 1063ms
-[00:15:12.432] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:20.803] Server  LOG      ✓ Compiled in 2s
-[00:15:29.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:55.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:02.039] Server  LOG      ✓ Compiled in 2.9s
-[00:21:04.699] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.326] Server  LOG      ✓ Ready in 3.4s
+[00:00:09.103] Server  LOG      ○ Compiling /[locale] ...
+[00:00:18.378] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:53.848] Server  LOG      ○ Compiling /_not-found/page ...
+[00:03:02.932] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:50.223] Server  LOG      ✓ Compiled in 172ms
+[00:04:00.452] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:25.288] Server  LOG      ✓ Compiled in 327ms
+[00:04:28.190] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:53.900] Server  LOG      ✓ Compiled in 113ms
+[00:05:04.873] Server  LOG      ✓ Compiled in 128ms
+[00:05:55.068] Server  LOG      ✓ Compiled in 265ms
+[00:06:42.118] Server  LOG      ✓ Compiled in 162ms
+[00:10:11.339] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:22.281] Server  LOG      ✓ Compiled in 68ms
+[00:13:49.675] Server  LOG      ✓ Compiled in 700ms
+[00:13:51.048] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:51.310] Server  LOG      ✓ Compiled in 56ms
+[00:14:56.826] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSAuKD2tGrhEOXIiZFjGQtpz4YUsuKDcnbvB1m" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:56.826] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSjM5lQZOjzcuZ2rdCh90ayqV3SHpBkfM8mEeL" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:56.826] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSGCBIXHLw90A1WGcgYk2OBqTrJ7xUjHvI4bSL" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:56.826] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSQ7VPCTh4EOmYQS5L3ZukcWyJdXFgoB7q0fTn" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:56.826] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSFhErEdUibpiezfHoZWXTwmcg7Gx2YL4CEaNs" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:56.826] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSwzl2BQ4YFKXyVfox8ze6QBaTnp0N75GvhqAD" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:43.925] Server  LOG      ✓ Compiled in 4ms
+[00:16:47.245] Server  LOG      ✓ Compiled in 21ms
+[00:21:57.776] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.814] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.846] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.854] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.863] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.876] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.884] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.887] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.956] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.963] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.976] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.982] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.990] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.994] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:57.997] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:58.004] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:58.010] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:58.013] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:58.020] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:58.025] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:21:58.268] Browser ERROR   ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:22:01.687] Server  LOG      ✓ Compiled in 409ms
+[00:22:16.277] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.282] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.289] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.293] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.297] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.302] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.307] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.312] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.317] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.323] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.327] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.333] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.341] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.345] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.349] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.353] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.359] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.362] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.385] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.442] Server  ERROR    ⨯ ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:22:16.680] Browser ERROR   ./app/[locale]/page.tsx:7:1
+Module not found: Can't resolve '@/components/MenuSlider'
+   5 | import { authOptions } from "@/lib/auth-options";
+   6 | import ScrollAnimation from "@/components/ScrollAnimation";
+>  7 | import MenuSlider from "@/components/MenuSlider"; // <--- შემოვიტანოთ ახალი კომპონენტი
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | export default async function Home({
+  10 |   params,
+
+Import map: aliased to relative './components/MenuSlider' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:22:29.978] Server  LOG      ✓ Compiled in 997ms
+[00:22:37.245] Server  LOG      ✓ Compiled in 0ms
+[00:24:25.669] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:09.344] Server  LOG      ✓ Compiled in 110ms
+[00:27:47.102] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrExperienceTitle` in messages for locale `en`.
+[00:27:47.166] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrHeadline` in messages for locale `en`.
+[00:27:47.361] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrSubheadline` in messages for locale `en`.
+[00:27:48.088] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrExperienceTitle` in messages for locale `en`.
+[00:27:48.119] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrHeadline` in messages for locale `en`.
+[00:27:48.155] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrSubheadline` in messages for locale `en`.
+[00:27:54.073] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrExperienceTitle` in messages for locale `en`.
+[00:27:54.345] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrHeadline` in messages for locale `en`.
+[00:27:54.383] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrSubheadline` in messages for locale `en`.
+[00:34:08.026] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrExperienceTitle` in messages for locale `en`.
+[00:34:08.197] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrHeadline` in messages for locale `en`.
+[00:34:08.213] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrSubheadline` in messages for locale `en`.
+[00:34:08.230] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature1` in messages for locale `en`.
+[00:34:08.243] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature2` in messages for locale `en`.
+[00:34:08.262] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature3` in messages for locale `en`.
+[00:34:08.993] Server  LOG      ✓ Compiled in 0ms
+[00:34:09.219] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrExperienceTitle` in messages for locale `en`.
+[00:34:09.228] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrHeadline` in messages for locale `en`.
+[00:34:09.243] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrSubheadline` in messages for locale `en`.
+[00:34:09.298] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature1` in messages for locale `en`.
+[00:34:09.312] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature2` in messages for locale `en`.
+[00:34:09.463] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature3` in messages for locale `en`.
+[00:35:52.106] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrExperienceTitle` in messages for locale `en`.
+[00:35:52.144] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrHeadline` in messages for locale `en`.
+[00:35:52.167] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrSubheadline` in messages for locale `en`.
+[00:35:52.181] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature1` in messages for locale `en`.
+[00:35:52.195] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature2` in messages for locale `en`.
+[00:35:52.218] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature3` in messages for locale `en`.
+[00:35:52.670] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrExperienceTitle` in messages for locale `en`.
+[00:35:52.770] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrHeadline` in messages for locale `en`.
+[00:35:52.804] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrSubheadline` in messages for locale `en`.
+[00:35:52.815] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature1` in messages for locale `en`.
+[00:35:52.840] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature2` in messages for locale `en`.
+[00:35:52.851] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature3` in messages for locale `en`.
+[00:35:53.185] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrExperienceTitle` in messages for locale `en`.
+[00:35:53.195] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrHeadline` in messages for locale `en`.
+[00:35:53.313] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrSubheadline` in messages for locale `en`.
+[00:35:53.487] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature1` in messages for locale `en`.
+[00:35:53.538] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature2` in messages for locale `en`.
+[00:35:53.574] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature3` in messages for locale `en`.
+[00:35:54.467] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrExperienceTitle` in messages for locale `en`.
+[00:35:54.512] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrHeadline` in messages for locale `en`.
+[00:35:54.535] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrSubheadline` in messages for locale `en`.
+[00:35:54.569] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature1` in messages for locale `en`.
+[00:35:54.600] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature2` in messages for locale `en`.
+[00:35:54.655] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `mainpage.qrFeature3` in messages for locale `en`.
+[00:36:04.682] Browser ERROR   ./messages/en.json
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/messages/en.json (json)
+
+Caused by:
+- Unable to make a module from invalid JSON: expected `,` or `}` at line 191 column 5
+
+Debug info:
+- An error occurred while generating the chunk item [project]/messages/en.json (json)
+- Execution of <JsonChunkItem as EcmascriptChunkItem>::content failed
+- Unable to make a module from invalid JSON: expected `,` or `}` at line 191 column 5
+    at mainpage.?
+     187 | "qrSubheadline": "Just point your phone camera at the QR code and see how fast your future menu loads.",
+     188 | "qrFeature1": "Instantly loads",
+     189 | "qrFeature2": "No app required",
+     190 | "qrFeature3": "Safe & Secure"
+         |     v
+     191 +     "ctaPrimary": "Create Menu Free",
+         |     ^
+     192 |     "ctaSecondary": "View Live Demo",
+     193 |     
+     194 |     "trust": "Trusted by modern establishments",
+     195 |     
+
+Import trace:
+  Server Component:
+    ./messages/en.json
+    ./app/[locale]/layout.tsx
+[00:36:04.682] Browser ERROR   ./messages/en.json
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/messages/en.json (json)
+
+Caused by:
+- Unable to make a module from invalid JSON: expected `,` or `}` at line 191 column 5
+
+Debug info:
+- An error occurred while generating the chunk item [project]/messages/en.json (json)
+- Execution of <JsonChunkItem as EcmascriptChunkItem>::content failed
+- Unable to make a module from invalid JSON: expected `,` or `}` at line 191 column 5
+    at mainpage.?
+     187 | "qrSubheadline": "Just point your phone camera at the QR code and see how fast your future menu loads.",
+     188 | "qrFeature1": "Instantly loads",
+     189 | "qrFeature2": "No app required",
+     190 | "qrFeature3": "Safe & Secure"
+         |     v
+     191 +     "ctaPrimary": "Create Menu Free",
+         |     ^
+     192 |     "ctaSecondary": "View Live Demo",
+     193 |     
+     194 |     "trust": "Trusted by modern establishments",
+     195 |     
+
+Import trace:
+  Server Component:
+    ./messages/en.json
+    ./app/[locale]/layout.tsx
+[00:36:06.600] Server  LOG      ✓ Compiled in 134ms
+[00:36:22.151] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:04.589] Server  LOG      ✓ Compiled in 94ms
+[00:47:10.184] Server  LOG      ✓ Compiled in 599ms
