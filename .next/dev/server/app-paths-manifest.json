@@ -1,5 +1,10 @@
 {
+  "/[locale]/(auth)/register/page": "app/[locale]/(auth)/register/page.js",
+  "/[locale]/dashboard/menu/[menuId]/page": "app/[locale]/dashboard/menu/[menuId]/page.js",
+  "/[locale]/dashboard/menu/[menuId]/qr/page": "app/[locale]/dashboard/menu/[menuId]/qr/page.js",
+  "/[locale]/dashboard/page": "app/[locale]/dashboard/page.js",
   "/[locale]/menu/[id]/page": "app/[locale]/menu/[id]/page.js",
   "/[locale]/page": "app/[locale]/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }

@@ -12,11 +12,12 @@
     "db:generate": "prisma generate",
     "db:studio": "prisma studio",
     "add-dynamic": "node scripts/addDynamicFlag.js"
-
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
     "@uploadthing/react": "^7.3.3",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.36.1",
     "bcryptjs": "^2.4.3",
     "framer-motion": "^12.23.26",
     "lucide-react": "^0.561.0",

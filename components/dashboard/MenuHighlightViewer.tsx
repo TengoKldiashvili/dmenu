@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import Image from "next/image";
 import { Item } from "@prisma/client";
 import { ThemeConfig } from "@/lib/themes/registry";
@@ -20,9 +20,23 @@ export default function MenuHighlightViewer({
   theme,
   onClose,
 }: Props) {
+  const displayItems = useMemo(() => {
+    if (!items || items.length === 0) return [];
+
+    const d = new Date();
+    const seed = d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
+    
+    const shuffled = [...items];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.abs(Math.sin(seed + i)) * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    
+    return shuffled.slice(0, 5);
+  }, [items]);
+
   const [index, setIndex] = useState(0);
   const [progress, setProgress] = useState(0);
-
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const tokens = {
@@ -33,8 +47,9 @@ export default function MenuHighlightViewer({
   };
 
   useEffect(() => {
-    const startedAt = Date.now();
+    if (displayItems.length === 0) return;
 
+    const startedAt = Date.now();
     timerRef.current = setInterval(() => {
       const elapsed = Date.now() - startedAt;
       const p = Math.min(1, elapsed / DURATION);
@@ -43,7 +58,7 @@ export default function MenuHighlightViewer({
       if (p >= 1) {
         if (timerRef.current) clearInterval(timerRef.current);
 
-        if (index < items.length - 1) {
+        if (index < displayItems.length - 1) {
           setIndex((i) => i + 1);
         } else {
           onClose();
@@ -54,10 +69,10 @@ export default function MenuHighlightViewer({
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [index, items.length, onClose]);
+  }, [index, displayItems.length, onClose]);
 
   const goNext = () => {
-    if (index < items.length - 1) setIndex((i) => i + 1);
+    if (index < displayItems.length - 1) setIndex((i) => i + 1);
     else onClose();
   };
 
@@ -65,20 +80,22 @@ export default function MenuHighlightViewer({
     if (index > 0) setIndex((i) => i - 1);
   };
 
-  const current = items[index];
+  const current = displayItems[index];
+
+  if (!current) return null;
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center"
+      className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center touch-none"
+      style={{ overscrollBehavior: "none" }}
       onClick={onClose}
     >
       <div
         className="relative w-full max-w-[390px] h-[640px] rounded-[28px] overflow-hidden border border-white/10"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Progress */}
         <div className="absolute top-3 left-3 right-3 flex gap-2 z-10">
-          {items.map((_, i) => (
+          {displayItems.map((_, i) => (
             <div
               key={i}
               className="h-1 flex-1 rounded-full bg-white/25 overflow-hidden"
@@ -98,7 +115,6 @@ export default function MenuHighlightViewer({
           ))}
         </div>
 
-        {/* Close */}
         <button
           type="button"
           onClick={onClose}
@@ -107,7 +123,6 @@ export default function MenuHighlightViewer({
           ✕
         </button>
 
-        {/* Media */}
         <div className={`relative h-full ${tokens.bg} ${tokens.text}`}>
           {current.imageUrl ? (
             <Image
@@ -121,10 +136,8 @@ export default function MenuHighlightViewer({
             <div className="h-full w-full bg-gradient-to-br from-white/10 to-white/5" />
           )}
 
-          {/* Strong gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-transparent" />
 
-          {/* Content */}
           <div className="absolute bottom-0 left-0 right-0 p-5 bg-black/30 backdrop-blur-md rounded-t-2xl text-white">
             <div
               className="text-xs uppercase tracking-wide text-white/80 mb-1"
@@ -159,7 +172,6 @@ export default function MenuHighlightViewer({
             )}
           </div>
 
-          {/* Tap zones */}
           <button
             type="button"
             className="absolute inset-y-0 left-0 w-1/2"
