@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth-options";
 import { redirect } from "next/navigation";
 import RegistrationClient from "./RegistrationClient";
-
+export const dynamic = "force-dynamic";
 export default async function RegistrationPage() {
   const session = await getServerSession(authOptions);
 

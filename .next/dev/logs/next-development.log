@@ -2,3 +2,2019 @@
 [00:00:09.066] Server  LOG      ○ Compiling /[locale] ...
 [00:00:15.599] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:04:27.823] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:43.576] Server  ERROR    ⨯ ./package.json:8:5
+Error parsing package.json file
+   6 |     "dev": "next dev --turbo",
+   7 |     "build": "prisma generate && next build"
+>  8 |     "start": "next start",
+     |     ^
+   9 |     "lint": "eslint",
+  10 |     "db:push": "prisma db push",
+  11 |     "db:generate": "prisma generate",
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 8 column 5
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 158 (line 8 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:26:43.646] Server  LOG      ✓ Compiled in 1225ms
+[00:26:44.702] Browser ERROR   ./package.json:8:5
+Error parsing package.json file
+   6 |     "dev": "next dev --turbo",
+   7 |     "build": "prisma generate && next build"
+>  8 |     "start": "next start",
+     |     ^
+   9 |     "lint": "eslint",
+  10 |     "db:push": "prisma db push",
+  11 |     "db:generate": "prisma generate",
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 8 column 5
+[00:26:44.702] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 158 (line 8 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:26:46.600] Server  LOG      ○ Compiling /_error ...
+[00:27:07.464] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:18.721] Browser ERROR   ./app/[locale]/page.tsx:19:1
+Parsing ecmascript source code failed
+  17 |   });
+  18 |
+> 19 | export const dynamic = "force-dynamic";
+     | ^^^^^^
+  20 |   const isLoggedIn = !!session?.user;
+  21 |
+  22 |   return (
+
+'import', and 'export' cannot be used outside of module code
+[00:44:21.407] Server  LOG      ✓ Compiled in 132ms
+[00:44:37.219] Server  LOG      ✓ Compiled in 77ms
+[00:55:34.117] Server  ERROR    ⨯ ./package.json:13:5
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |     "scripts": {
+     |     ^
+  14 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+  15 | }
+  16 |
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 5
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 312 (line 13 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:34.278] Server  LOG      ✓ Compiled in 1518ms
+[00:55:34.668] Server  ERROR    ⨯ ./package.json:13:5
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |     "scripts": {
+     |     ^
+  14 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+  15 | }
+  16 |
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 5
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 312 (line 13 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:34.921] Browser ERROR   ./package.json:13:5
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |     "scripts": {
+     |     ^
+  14 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+  15 | }
+  16 |
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 5
+[00:55:34.921] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 312 (line 13 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:34.921] Browser ERROR   ./package.json:13:5
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |     "scripts": {
+     |     ^
+  14 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+  15 | }
+  16 |
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 5
+[00:55:34.921] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 312 (line 13 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:34.921] Browser ERROR   ./package.json:13:5
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |     "scripts": {
+     |     ^
+  14 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+  15 | }
+  16 |
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 5
+[00:55:34.921] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 312 (line 13 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:34.953] Server  ERROR    ⨯ ./package.json:13:5
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |     "scripts": {
+     |     ^
+  14 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+  15 | }
+  16 |
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 5
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 312 (line 13 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:36.290] Browser ERROR   ./package.json:13:5
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |     "scripts": {
+     |     ^
+  14 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+  15 | }
+  16 |
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 5
+[00:55:36.290] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 312 (line 13 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:36.290] Browser ERROR   ./package.json:13:5
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |     "scripts": {
+     |     ^
+  14 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+  15 | }
+  16 |
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 5
+[00:55:36.290] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 312 (line 13 column 5)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:36.463] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 | }
+  15 |
+  16 |   },
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:36.612] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 | }
+  15 |
+  16 |   },
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:36.790] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 | }
+  15 |
+  16 |   },
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:36.790] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:37.694] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:37.694] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:37.717] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:37.808] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:37.878] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:37.951] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:38.063] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:38.280] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:38.479] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:38.594] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:38.686] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:38.845] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:38.986] Server  ERROR    ⨯ ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+
+
+
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:39.797] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:39.797] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:41.328] Server  LOG      ✓ Compiled in 2.1s
+[00:55:41.698] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:41.699] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/tengo/Downloads/MenuQR 2/app/globals.css:1:1: /Users/tengo/Downloads/MenuQR 2/package.json (directory description file): SyntaxError: Expected ',' or '}' after property value in JSON at position 310 (line 13 column 3)
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/tengo/Downloads/MenuQR 2/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:55:44.181] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:44.181] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:44.852] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:44.852] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:46.934] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:46.934] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:46.934] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:46.935] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:46.935] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.842] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.843] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.843] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.843] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.843] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.843] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.843] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.843] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.843] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:49.843] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:52.827] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:53.830] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:53.831] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:53.831] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:54.735] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:54.735] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:54.735] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.746] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.746] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.746] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.746] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.746] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.746] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.746] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:55:59.758] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:56:00.717] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:56:00.717] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:56:00.717] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:56:00.717] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:56:00.717] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3
+[00:56:00.717] Browser ERROR   ./package.json:13:3
+Error parsing package.json file
+  11 |     "db:generate": "prisma generate",
+  12 |     "db:studio": "prisma studio"
+> 13 |   "add-dynamic": "node scripts/addDynamicFlag.js"
+     |   ^
+  14 |
+  15 |   },
+  16 |   "dependencies": {
+
+package.json is not parseable: invalid JSON: expected `,` or `}` at line 13 column 3

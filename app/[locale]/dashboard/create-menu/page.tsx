@@ -6,6 +6,7 @@ import { LIMITS } from "@/lib/limits";
 
 import CreateMenuPage from "./CreateMenuPage";
 
+export const dynamic = "force-dynamic";
 export default async function CreateMenuPageWrapper({
   params,
 }: {
