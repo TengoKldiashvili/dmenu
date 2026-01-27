@@ -23,7 +23,7 @@
       "passwordTooShort": "Password must be at least 8 characters",
       "emailExists": "User with this email already exists",
       "invalidEmail": "Please enter a valid email address",
-      "generic": "Registration failed. Please try again."
+      "generic": "Login failed. Please try again."
     }
   },
   "register": {
