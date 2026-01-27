@@ -58,6 +58,7 @@ export default async function Home({
   return (
     <div className="min-h-screen bg-black text-zinc-300 overflow-x-hidden selection:bg-white selection:text-black">
 
+      {/* BACKGROUND EFFECTS */}
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         <div className="absolute top-[-20%] left-[20%] w-[800px] h-[800px] bg-white/[0.03] rounded-full blur-[120px] mix-blend-screen animate-pulse-slow" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-zinc-800/[0.05] rounded-full blur-[100px] mix-blend-screen" />
@@ -65,19 +66,23 @@ export default async function Home({
 
       <div className="fixed inset-0 z-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none"></div>
 
+      {/* NAVIGATION - FIXED SQUARE HEADER */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
-
+          
+          {/* Logo */}
           <div className="flex items-center shrink-0">
             <h1 className="text-sm sm:text-lg font-bold tracking-widest text-white uppercase">
               {t("brand")}
             </h1>
           </div>
 
+          {/* Right Actions */}
           <div className="flex items-center gap-2 sm:gap-6">
-
+            
+            {/* Language Switcher */}
             <div className="scale-90 sm:scale-100">
-              <LanguageSwitch locale={locale} />
+               <LanguageSwitch locale={locale} />
             </div>
 
             <div className="h-4 w-[1px] bg-white/10 hidden sm:block"></div>
@@ -110,6 +115,7 @@ export default async function Home({
         </div>
       </nav>
 
+      {/* MARKETING HERO */}
       <main className="relative z-10 max-w-7xl mx-auto px-6 py-32 lg:py-40">
         <ScrollAnimation className="text-center max-w-4xl mx-auto mb-28">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[10px] font-medium uppercase tracking-widest mb-10 hover:bg-white/10 transition-colors">
@@ -156,18 +162,20 @@ export default async function Home({
           </div>
         </ScrollAnimation>
 
+        {/* MENU SHOWCASE SECTION */}
         <div className="mt-20 mb-20 relative">
-          <ScrollAnimation className="text-center mb-16">
+          <ScrollAnimation className="text-center mb-12 sm:mb-16">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 tracking-tight">{t("feature1Title")}</h3>
             <p className="text-zinc-500 text-sm uppercase tracking-widest">{t("menuSelectionSubtitle")}</p>
           </ScrollAnimation>
 
-          <div className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-8 px-6 -mx-6 pb-12 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible md:pb-0 no-scrollbar items-start">
+          {/* Cards Container */}
+          <div className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-6 px-6 -mx-6 pb-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible md:pb-0 no-scrollbar items-start">
             {menuDemos.map((menu, i) => (
               <ScrollAnimation
                 key={menu.id}
                 delay={i * 100}
-                className="group relative rounded-[2rem] border border-white/10 bg-zinc-900/20 overflow-hidden hover:border-white/40 transition-all duration-500 hover:shadow-2xl hover:shadow-white/5 flex-shrink-0 w-[85vw] sm:w-[400px] md:w-auto snap-center h-full"
+                className="group relative rounded-[2rem] border border-white/10 bg-zinc-900/20 overflow-hidden hover:border-white/40 transition-all duration-500 hover:shadow-2xl hover:shadow-white/5 flex-shrink-0 w-[80vw] sm:w-[400px] md:w-auto snap-center h-full"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${menu.color} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
 
@@ -198,6 +206,16 @@ export default async function Home({
               </ScrollAnimation>
             ))}
           </div>
+
+          {/* 🔥 ახალი მინიშნება მობილურისთვის (Swipe Hint) */}
+          <div className="md:hidden flex items-center justify-center gap-3 mt-4 animate-pulse">
+             <div className="h-[1px] w-8 bg-gradient-to-r from-transparent to-zinc-600"></div>
+             <p className="text-[10px] font-bold uppercase tracking-widest text-zinc-500 flex items-center gap-2">
+               Swipe <span className="text-zinc-400 text-xs">→</span>
+             </p>
+             <div className="h-[1px] w-8 bg-gradient-to-l from-transparent to-zinc-600"></div>
+          </div>
+
         </div>
 
         <div className="mt-40 grid md:grid-cols-3 gap-8">
