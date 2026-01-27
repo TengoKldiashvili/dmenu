@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-en);
+  --font-ka: var(--font-ka);
+  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+:root {
+  --background: #080808;
+  --foreground: #ededed;
+}
+
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
+    --background: #080808;
     --foreground: #ededed;
   }
 }
@@ -15,11 +21,18 @@
 body {
   background: var(--background);
   color: var(--foreground);
-    font-family: var(--font-sans);
-
+  font-family: var(--font-sans);
 }
-@theme inline {
-  --font-sans: var(--font-en);
-  --font-ka: var(--font-ka);
-  --font-mono: var(--font-geist-mono);
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.animate-pulse-slow {
+  animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

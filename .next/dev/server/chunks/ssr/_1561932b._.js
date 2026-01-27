@@ -174,22 +174,22 @@ const THEMES = [
     {
         id: "light",
         preview: "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSP47gwCZiN4bS5PWTB0Yj3VQglMfA87tos1da",
-        demoUrl: "https://example.com/themes/light"
+        demoUrl: "/menu/demo"
     },
     {
         id: "minimal",
         preview: "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSipogjuQ3RfKv5QoznhOCXLdMx2NWVbqjg1Gk",
-        demoUrl: "https://example.com/themes/minimal"
+        demoUrl: "/menu/demo2"
     },
     {
         id: "dark",
         preview: "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZS48Y0C950X1EPpmzvlHta7uIqnDsjQRZd9YVr",
-        demoUrl: "https://example.com/themes/dark"
+        demoUrl: "/menu/demo3"
     },
     {
         id: "elegant",
         preview: "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSVVuodUvijCkfnovGqWY3R0JbDcwAzFKytrxh",
-        demoUrl: "https://example.com/themes/elegant"
+        demoUrl: "/menu/demo4"
     }
 ];
 function ThemePicker({ value, onChange, disabled = false }) {
