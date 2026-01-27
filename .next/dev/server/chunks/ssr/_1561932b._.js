@@ -173,35 +173,36 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl
 const THEMES = [
     {
         id: "light",
-        preview: "/themes/light.png"
+        preview: "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSP47gwCZiN4bS5PWTB0Yj3VQglMfA87tos1da",
+        demoUrl: "https://example.com/themes/light"
     },
     {
         id: "minimal",
-        preview: "/themes/minimal.png"
+        preview: "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSipogjuQ3RfKv5QoznhOCXLdMx2NWVbqjg1Gk",
+        demoUrl: "https://example.com/themes/minimal"
     },
     {
         id: "dark",
-        preview: "/themes/dark.png"
+        preview: "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZS48Y0C950X1EPpmzvlHta7uIqnDsjQRZd9YVr",
+        demoUrl: "https://example.com/themes/dark"
     },
     {
         id: "elegant",
-        preview: "/themes/elegant.png"
+        preview: "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSVVuodUvijCkfnovGqWY3R0JbDcwAzFKytrxh",
+        demoUrl: "https://example.com/themes/elegant"
     }
 ];
 function ThemePicker({ value, onChange, disabled = false }) {
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslations"])("theme");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `
-        space-y-4
-        ${disabled ? "opacity-50 pointer-events-none" : ""}
-      `,
+        className: `space-y-4 ${disabled ? "opacity-50 pointer-events-none" : ""}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                 className: "text-sm font-medium text-white",
                 children: t("label")
             }, void 0, false, {
                 fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
-                lineNumber: 32,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -225,58 +226,76 @@ function ThemePicker({ value, onChange, disabled = false }) {
                                     className: "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                                 }, void 0, false, {
                                     fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 73,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
-                                lineNumber: 53,
+                                lineNumber: 72,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "p-3",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: `
-                    text-sm font-medium
-                    ${active ? "text-white" : "text-white/70"}
-                  `,
+                                        className: `text-sm font-medium ${active ? "text-white" : "text-white/70"}`,
                                         children: t(theme.id)
                                     }, void 0, false, {
                                         fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 81,
                                         columnNumber: 17
                                     }, this),
-                                    active && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs text-white/50 mt-1",
-                                        children: t("selected")
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mt-2 flex items-center justify-between",
+                                        children: [
+                                            active && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-xs text-white/50",
+                                                children: t("selected")
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
+                                                lineNumber: 90,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: theme.demoUrl,
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                onClick: (e)=>e.stopPropagation(),
+                                                className: " text-[11px] font-medium px-2 py-1 rounded-full bg-white/5 text-white/70 hover:bg-white/10 hover:text-white transition-colors ",
+                                                children: t("liveDemo")
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
+                                                lineNumber: 95,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
-                                        lineNumber: 72,
-                                        columnNumber: 19
+                                        lineNumber: 88,
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
-                                lineNumber: 61,
+                                lineNumber: 80,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, theme.id, true, {
                         fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
-                        lineNumber: 39,
+                        lineNumber: 59,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
-                lineNumber: 34,
+                lineNumber: 54,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/[locale]/dashboard/create-menu/ThemePicker.tsx",
-        lineNumber: 26,
+        lineNumber: 46,
         columnNumber: 5
     }, this);
 }

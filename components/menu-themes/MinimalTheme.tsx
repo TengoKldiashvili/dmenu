@@ -1,78 +1,132 @@
-import Image from "next/image";
-import { PublicMenu } from "@/types/menu";
+"use client";
 
-export default function MinimalTheme({ menu }: { menu: PublicMenu }) {
+import Image from "next/image";
+import { useState } from "react";
+import { PublicMenu } from "@/types/menu";
+import { ThemeConfig } from "@/lib/themes/registry";
+import { Item } from "@prisma/client";
+
+import StoryButton from "@/components/menu-themes/StoryButton";
+import MenuHighlightViewer from "@/components/dashboard/MenuHighlightViewer";
+
+interface Props {
+  menu: PublicMenu;
+  theme?: ThemeConfig;
+  autoStory: {
+    title: string;
+    items: Item[];
+  } | null;
+}
+
+export default function MinimalTheme({ menu, theme, autoStory }: Props) {
+  const [openStory, setOpenStory] = useState(false);
+
   return (
-    <div className="min-h-screen bg-[#f6f4ef] text-[#2e2e2e]">
-      <div className="max-w-xl mx-auto px-6 py-20">
-        <div className="text-center mb-20">
+    <div className="min-h-screen bg-gray-50 flex justify-center text-gray-900">
+      <div className="w-full max-w-md sm:max-w-lg">
+        {openStory && autoStory && (
+          <MenuHighlightViewer
+            title={autoStory.title}
+            items={autoStory.items}
+            theme={theme}
+            onClose={() => setOpenStory(false)}
+          />
+        )}
+
+        <nav className="sticky top-0 z-20 bg-gray-50/95 backdrop-blur border-b">
+          <div className="flex gap-4 px-4 py-3 overflow-x-auto">
+            {menu.categories.map((cat) => (
+              <a
+                key={cat.id}
+                href={`#cat-${cat.id}`}
+                className="
+                  text-sm font-medium whitespace-nowrap
+                  px-3 py-1.5 rounded-full
+                  bg-white shadow-sm
+                "
+              >
+                {cat.name}
+              </a>
+            ))}
+          </div>
+        </nav>
+
+        {/* HEADER */}
+        <header className="px-4 py-8 text-center">
           {menu.logoUrl && (
-            <div className="mb-10 flex justify-center">
-              <div className="w-28 h-28 flex items-center justify-center">
-                <Image
-                  src={menu.logoUrl}
-                  alt={`${menu.title} logo`}
-                  width={112}
-                  height={112}
-                  className="object-contain opacity-90"
-                />
-              </div>
-            </div>
+            <Image
+              src={menu.logoUrl}
+              alt="Logo"
+              width={88}
+              height={88}
+              className="mx-auto mb-4"
+            />
           )}
 
-          <h1 className="text-[26px] font-light tracking-[0.15em] mb-3">
-            {menu.title}
-          </h1>
+          <h1 className="text-2xl font-bold">{menu.title}</h1>
 
           {menu.description && (
-            <p className="text-[12px] text-[#6b6b6b] tracking-wide max-w-md mx-auto">
-              {menu.description}
-            </p>
+            <p className="text-gray-500 mt-3">{menu.description}</p>
           )}
-        </div>
 
-        <div className="space-y-24">
+          {autoStory && (
+            <div className="mt-5 flex justify-center">
+              <StoryButton
+                title={autoStory.title}
+                theme={theme}
+                onClick={() => setOpenStory(true)}
+              />
+            </div>
+          )}
+        </header>
+
+        {/* CONTENT */}
+        <main className="px-4 pb-24 space-y-12">
           {menu.categories.map((category) => (
-            <section key={category.id}>
-
-              <div className="flex items-center gap-4 mb-12">
-                <div className="h-px flex-1 bg-[#d8d5cf]" />
-                <h2 className="text-[11px] uppercase tracking-[0.35em] text-[#6b6b6b]">
-                  {category.name}
-                </h2>
-                <div className="h-px flex-1 bg-[#d8d5cf]" />
-              </div>
-
-              <div className="space-y-6">
+            <section
+              key={category.id}
+              id={`cat-${category.id}`}
+              className="scroll-mt-24"
+            >
+              <h2 className="text-lg font-semibold mb-4">{category.name}</h2>
+              <div className="grid grid-cols-1 gap-4">
                 {category.items.map((item) => (
-                  <div
-                    key={item.id}
-                    className="grid grid-cols-[1fr_auto] gap-10"
-                  >
-                    <div>
-                      <p className="text-[14px] font-normal tracking-wide">
-                        {item.name}
-                      </p>
-                      {item.description && (
-                        <p className="text-[12px] text-[#6b6b6b] mt-1 leading-relaxed max-w-sm">
-                          {item.description}
-                        </p>
-                      )}
-                    </div>
-
-                    {item.price && (
-                      <span className="text-[13px] tracking-wide text-[#2e2e2e] whitespace-nowrap">
-                        {item.price.toFixed(2)} ₾
-                      </span>
-                    )}
-                  </div>
+                  <GridItem key={item.id} item={item} />
                 ))}
               </div>
-
             </section>
           ))}
+        </main>
+      </div>
+    </div>
+  );
+}
+
+/* ================= ITEM CARD ================= */
+
+function GridItem({ item }: { item: Item }) {
+  return (
+    <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+      {item.imageUrl && (
+        <Image
+          src={item.imageUrl}
+          alt={item.name}
+          width={400}
+          height={260}
+          className="w-full h-40 object-cover"
+        />
+      )}
+
+      <div className="p-4">
+        <div className="flex justify-between font-medium">
+          <span>{item.name}</span>
+
+          {item.price !== null && <span>₾{item.price.toFixed(2)}</span>}
         </div>
 
+        {item.description && (
+          <p className="text-sm text-gray-500 mt-1">{item.description}</p>
+        )}
       </div>
     </div>
   );

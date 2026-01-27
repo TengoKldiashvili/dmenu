@@ -1,9 +1,38 @@
-import Image from "next/image";
-import { PublicMenu } from "@/types/menu";
+"use client";
 
-export default function LightTheme({ menu }: { menu: PublicMenu }) {
+import Image from "next/image";
+import { useState } from "react";
+import { PublicMenu } from "@/types/menu";
+import { ThemeConfig } from "@/lib/themes/registry";
+import { Item } from "@prisma/client";
+
+import MenuHighlightViewer from "@/components/dashboard/MenuHighlightViewer";
+import StoryButton from "@/components/menu-themes/StoryButton";
+
+interface Props {
+  menu: PublicMenu;
+  theme?: ThemeConfig;
+  autoStory: {
+    title: string;
+    items: Item[];
+  } | null;
+}
+
+export default function LightTheme({ menu, theme, autoStory }: Props) {
+  const [openStory, setOpenStory] = useState(false);
+
   return (
     <div className="min-h-screen bg-white text-gray-900">
+      {/* STORY MODAL */}
+      {openStory && autoStory && (
+        <MenuHighlightViewer
+          title={autoStory.title}
+          items={autoStory.items}
+          theme={theme}
+          onClose={() => setOpenStory(false)}
+        />
+      )}
+
       <div className="max-w-4xl mx-auto px-5 py-14">
         {menu.logoUrl && (
           <div className="mb-10 text-center">
@@ -17,14 +46,23 @@ export default function LightTheme({ menu }: { menu: PublicMenu }) {
           </div>
         )}
 
-        <h1 className="text-4xl font-bold text-center mb-3">
-          {menu.title}
-        </h1>
+        <h1 className="text-4xl font-bold text-center mb-3">{menu.title}</h1>
 
         {menu.description && (
           <p className="text-center text-gray-600 mb-12 max-w-xl mx-auto">
             {menu.description}
           </p>
+        )}
+
+        {/* STORY BUTTON */}
+        {autoStory && autoStory.items.length > 0 && (
+          <div className="mb-10">
+          <StoryButton
+            title={autoStory.title}
+            theme={theme}
+            onClick={() => setOpenStory(true)}
+          />
+            </div>
         )}
 
         <div className="space-y-14">
@@ -52,10 +90,8 @@ export default function LightTheme({ menu }: { menu: PublicMenu }) {
 
                     <div className="flex-1">
                       <div className="flex justify-between items-start">
-                        <h3 className="text-lg font-semibold">
-                          {item.name}
-                        </h3>
-                        {item.price && (
+                        <h3 className="text-lg font-semibold">{item.name}</h3>
+                        {item.price !== null && (
                           <span className="text-lg font-bold text-gray-900">
                             {item.price.toFixed(2)} ₾
                           </span>
@@ -74,7 +110,6 @@ export default function LightTheme({ menu }: { menu: PublicMenu }) {
             </section>
           ))}
         </div>
-
       </div>
     </div>
   );

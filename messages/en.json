@@ -21,8 +21,7 @@
     "block":"Account is locked for 5 minutes. Try again later."
 
   },
-
-  "register": {
+ "register": {
     "title": "Create an account",
     "subtitle": "Start building your digital menu",
     "name": "Name",
@@ -96,8 +95,11 @@
     "minimal": "Minimal",
     "dark": "Dark",
     "elegant": "Elegant",
-    "selected": "Selected"
+    "selected": "Selected",
+    "liveDemo": "Live demo"
+
   },
+  
 
   "menuBuilder": {
     "back": "Back to dashboard",
@@ -192,7 +194,7 @@
     "headlineMain": "Your restaurant menu,",
     "headlineHighlight": "reinvented for mobile",
 
-    "subhead": "dmenu lets you create a clean, modern digital menu in minutes. Manage items, upload photos, and share instantly with a QR code — no printing, no apps, no confusion.",
+    "subhead": "DMENU lets you create a clean, modern digital menu in minutes. Manage items, upload photos, and share instantly with a QR code — no printing, no apps, no confusion.",
 
     "ctaPrimary": "Create your digital menu",
     "ctaSecondary": "I already have an account",
@@ -221,7 +223,7 @@
     "previewCustomerDesc": "What your guests see on their phones.",
 
     "contactTitle": "Have questions or need help?",
-    "contactDesc": "We’re happy to help you get started or answer any questions about dmenu.",
+    "contactDesc": "We’re happy to help you get started or answer any questions about DMENU.",
 
     "finalTitle": "Ready to go digital?",
     "finalDesc": "Create your first menu in under 5 minutes.",
