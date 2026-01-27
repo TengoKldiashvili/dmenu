@@ -17,7 +17,14 @@
     "forgotPassword": "Forgot password?",
     "invalidCredentials": "Invalid email or password",
     "generic": "Something went wrong. Please try again later.",
-    "block": "Account is locked for 5 minutes. Try again later."
+    "block": "Account is locked for 5 minutes. Try again later.",
+     "errors": {
+      "missingFields": "All fields are required",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "emailExists": "User with this email already exists",
+      "invalidEmail": "Please enter a valid email address",
+      "generic": "Registration failed. Please try again."
+    }
   },
   "register": {
     "title": "Create an account",
