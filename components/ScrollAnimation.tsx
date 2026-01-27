@@ -19,33 +19,36 @@ export default function ScrollAnimation({
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(entry.target); 
         }
       },
       {
-        threshold: 0.1, 
-        rootMargin: "0px 0px -50px 0px", 
+        threshold: 0.05, 
+        rootMargin: "0px 0px -20px 0px", 
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) observer.unobserve(ref.current);
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
 
   return (
     <div
       ref={ref}
-      className={`${className} transition-all duration-1000 ease-out transform ${
+      className={`${className} transition-all duration-700 ease-[cubic-bezier(0.21,1.02,0.73,1)] ${
         isVisible
           ? "opacity-100 translate-y-0 scale-100"
-          : "opacity-0 translate-y-16 scale-95"
+          : "opacity-0 translate-y-8 scale-[0.98] pointer-events-none" 
       }`}
-      style={{ transitionDelay: `${delay}ms` }}
+      style={{ 
+        transitionDelay: `${delay}ms`,
+        willChange: "transform, opacity" 
+      }}
     >
       {children}
     </div>
