@@ -107,18 +107,12 @@ __turbopack_context__.s([
     "UploadButton",
     ()=>UploadButton,
     "UploadDropzone",
-    ()=>UploadDropzone,
-    "getUploadThingKey",
-    ()=>getUploadThingKey
+    ()=>UploadDropzone
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$uploadthing$2f$react$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/@uploadthing/react/dist/index.js [app-ssr] (ecmascript) <locals>");
 ;
 const UploadButton = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$uploadthing$2f$react$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateUploadButton"])();
 const UploadDropzone = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$uploadthing$2f$react$2f$dist$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateUploadDropzone"])();
-function getUploadThingKey(url) {
-    if (!url) return null;
-    return url.split("/f/")[1] ?? null;
-}
 }),
 "[project]/components/shared/LogoUpload.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";

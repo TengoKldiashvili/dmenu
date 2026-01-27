@@ -1,9 +1,6 @@
-[00:00:07.106] Server  LOG      ✓ Ready in 5.1s
-[00:00:10.738] Server  LOG      ○ Compiling /[locale] ...
-[00:00:27.845] Server  LOG      ○ Compiling /_not-found/page ...
-[00:00:43.191] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSjM5lQZOjzcuZ2rdCh90ayqV3SHpBkfM8mEeL" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:43.191] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSAuKD2tGrhEOXIiZFjGQtpz4YUsuKDcnbvB1m" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:43.191] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSQ7VPCTh4EOmYQS5L3ZukcWyJdXFgoB7q0fTn" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:43.191] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSGCBIXHLw90A1WGcgYk2OBqTrJ7xUjHvI4bSL" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:43.191] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSwzl2BQ4YFKXyVfox8ze6QBaTnp0N75GvhqAD" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:43.191] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSFhErEdUibpiezfHoZWXTwmcg7Gx2YL4CEaNs" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:09.104] Server  LOG      ✓ Ready in 5.9s
+[00:00:13.049] Server  LOG      ○ Compiling /[locale] ...
+[00:00:29.843] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:47.869] Server  LOG      ○ Compiling /[locale]/dashboard ...
+[00:00:53.615] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSozDdFwcULrcjDmhdBv9G2ZFAw0EN7n5o3qKM" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:53.615] Browser WARN    Image with src "https://s6vobsvxdq.ufs.sh/f/6yJieLdgU3ZSozDdFwcULrcjDmhdBv9G2ZFAw0EN7n5o3qKM" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
