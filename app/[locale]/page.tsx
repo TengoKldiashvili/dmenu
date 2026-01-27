@@ -65,52 +65,52 @@ export default async function Home({
 
       <div className="fixed inset-0 z-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none"></div>
 
-      <nav className="relative z-50 max-w-7xl mx-auto px-6 py-6">
-        <ScrollAnimation className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between rounded-full bg-zinc-900/30 backdrop-blur-xl border border-white/10 p-2 pl-6 pr-2 transition-all hover:border-white/20">
-          <div className="flex items-center justify-between">
-            <h1 className="text-lg font-bold tracking-tight text-white">
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+
+          <div className="flex items-center shrink-0">
+            <h1 className="text-sm sm:text-lg font-bold tracking-widest text-white uppercase">
               {t("brand")}
             </h1>
-
-            <div className="sm:hidden">
-              <LanguageSwitch locale={locale} />
-            </div>
           </div>
 
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
-            <div className="hidden sm:block">
+          <div className="flex items-center gap-2 sm:gap-6">
+
+            <div className="scale-90 sm:scale-100">
               <LanguageSwitch locale={locale} />
             </div>
 
+            <div className="h-4 w-[1px] bg-white/10 hidden sm:block"></div>
+
             {!isLoggedIn ? (
-              <>
+              <div className="flex items-center gap-3 sm:gap-4">
                 <Link
                   href={`/${locale}/login`}
-                  className="text-xs font-medium text-zinc-400 hover:text-white transition-all text-center sm:text-left px-4"
+                  className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors whitespace-nowrap"
                 >
                   {t("navSignIn")}
                 </Link>
 
                 <Link
                   href={`/${locale}/register`}
-                  className="w-full sm:w-auto text-center px-6 py-3 rounded-full bg-white text-black text-xs font-bold hover:bg-zinc-200 transition-all shadow-[0_0_20px_-5px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_-5px_rgba(255,255,255,0.4)]"
+                  className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-all whitespace-nowrap"
                 >
                   {t("navStartFree")}
                 </Link>
-              </>
+              </div>
             ) : (
               <Link
                 href={`/${locale}/dashboard`}
-                className="w-full sm:w-auto text-center px-6 py-3 rounded-full bg-white text-black text-xs font-bold hover:bg-zinc-200 transition-all"
+                className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-all whitespace-nowrap"
               >
                 {t("goToDashboard")}
               </Link>
             )}
           </div>
-        </ScrollAnimation>
+        </div>
       </nav>
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-32">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 py-32 lg:py-40">
         <ScrollAnimation className="text-center max-w-4xl mx-auto mb-28">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[10px] font-medium uppercase tracking-widest mb-10 hover:bg-white/10 transition-colors">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>

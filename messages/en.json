@@ -180,8 +180,8 @@
     "styleElegantDesc": "Elegant typography",
     "eyebrow": "Next Gen Menu Platform",
     "headlineMain": "Redefining the standard of",
-    "headlineHighlight": "Digital Dining.",
-    "subhead": "Transform your restaurant's identity with a menu system that feels as premium, curated, and exceptional as your cuisine.",
+    "headlineHighlight": "Digital Dining",
+    "subhead": "Transform your restaurant's identity with a menu system that feels as premium, curated, and exceptional as your cuisine",
     
     "ctaPrimary": "Create Menu Free",
     "ctaSecondary": "View Live Demo",
@@ -189,40 +189,40 @@
     "trust": "Trusted by modern establishments",
     
     "feature1Title": "Aesthetic Mastery",
-    "feature1Desc": "Designs that adapt to your brand's voice, from minimal to extravagant.",
+    "feature1Desc": "Designs that adapt to your brand's voice, from minimal to extravagant",
     
     "feature2Title": "Lightning Fast",
-    "feature2Desc": "Optimized for instant loading on any device, ensuring zero friction for guests.",
+    "feature2Desc": "Optimized for instant loading on any device, ensuring zero friction for guests",
     
     "feature3Title": "QR Intelligence",
-    "feature3Desc": "Smart QR codes that can be updated instantly without re-printing.",
+    "feature3Desc": "Smart QR codes that can be updated instantly without re-printing",
     
     "feature4Title": "Analytics & Growth",
-    "feature4Desc": "Track views, popular items, and customer behavior to optimize revenue.",
+    "feature4Desc": "Track views, popular items, and customer behavior to optimize revenue",
     
     "feature5Title": "Global Reach",
-    "feature5Desc": "Automatic multi-language support to welcome tourists effortlessly.",
+    "feature5Desc": "Automatic multi-language support to welcome tourists effortlessly",
     
     "previewDashboardTitle": "Command Center",
-    "previewDashboardDesc": "Manage your items, prices, and categories in real-time with an interface designed for speed and clarity.",
+    "previewDashboardDesc": "Manage your items, prices, and categories in real-time with an interface designed for speed and clarity",
     
     "previewCustomerTitle": "Guest Experience",
-    "previewCustomerDesc": "Your customers get a fluid, app-like experience directly in their browser. No downloads required.",
+    "previewCustomerDesc": "Your customers get a fluid, app-like experience directly in their browser. No downloads required",
     
     "contactTitle": "Elevate Your Business",
-    "contactDesc": "Ready to modernize your restaurant? Our team is here to help you get started with a tailored solution.",
+    "contactDesc": "Ready to modernize your restaurant? Our team is here to help you get started with a tailored solution",
     "contactEmailLabel": "EMAIL US",
     "contactEmail": "hello@tlab.ge",
     "contactInstagramLabel": "FOLLOW US",
     "contactInstagram": "@tlab.menus",
     
     "finalTitle": "Ready to upgrade?",
-    "finalDesc": "Join the wave of modern restaurants using DMENU today.",
+    "finalDesc": "Join the wave of modern restaurants using DMENU today",
     "finalButton": "Start For Free",
-    "footer": "All rights reserved. Designed for the future of hospitality."
+    "footer": "All rights reserved. Designed for the future of hospitality"
   },
   "unauthorized": "Unauthorized",
-  "menuLimitReached": "The free plan allows only one menu. Upgrade to create more.",
+  "menuLimitReached": "The free plan allows only one menu. Upgrade to create more",
   "titleRequired": "Title is required",
   "resetPassword": {
     "title": "Reset password",
@@ -240,10 +240,10 @@
       "passwordsNotMatch": "Passwords do not match",
       "invalidCode": "Invalid verification code",
       "codeExpired": "Verification code expired",
-      "tooManyAttempts": "Too many attempts. Please try again later.",
-      "tooManyRequests": "Too many requests. Please try again later.",
+      "tooManyAttempts": "Too many attempts. Please try again later",
+      "tooManyRequests": "Too many requests. Please try again later",
       "resendCooldown": "Please wait a bit before requesting another code",
-      "generic": "Something went wrong. Please try again later."
+      "generic": "Something went wrong. Please try again later"
     }
   },
   "forgotPassword": {
