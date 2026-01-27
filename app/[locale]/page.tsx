@@ -62,28 +62,31 @@ export default async function Home({
       <div className="fixed inset-0 z-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none"></div>
 
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
           <div className="flex items-center shrink-0">
-            <h1 className="text-sm sm:text-lg font-bold tracking-widest text-white uppercase">
+            <h1 className="text-xs sm:text-lg font-bold tracking-widest text-white uppercase truncate max-w-[100px] sm:max-w-none">
               {t("brand")}
             </h1>
           </div>
-          <div className="flex items-center gap-2 sm:gap-6">
-            <div className="scale-90 sm:scale-100">
+          
+          <div className="flex items-center gap-1.5 sm:gap-6 shrink-0">
+            <div className="scale-75 sm:scale-100 origin-right">
               <LanguageSwitch locale={locale} />
             </div>
+            
             <div className="h-4 w-[1px] bg-white/10 hidden sm:block"></div>
+            
             {!isLoggedIn ? (
-              <div className="flex items-center gap-3 sm:gap-4">
+              <div className="flex items-center gap-2 sm:gap-4">
                 <Link href={`/${locale}/login`} className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors whitespace-nowrap">
                   {t("navSignIn")}
                 </Link>
-                <Link href={`/${locale}/register`} className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-all whitespace-nowrap">
+                <Link href={`/${locale}/register`} className="px-3 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-all whitespace-nowrap">
                   {t("navStartFree")}
                 </Link>
               </div>
             ) : (
-              <Link href={`/${locale}/dashboard`} className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-all whitespace-nowrap">
+              <Link href={`/${locale}/dashboard`} className="px-3 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-all whitespace-nowrap">
                 {t("goToDashboard")}
               </Link>
             )}
