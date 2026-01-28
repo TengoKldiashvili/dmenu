@@ -101,48 +101,51 @@ function RegisterPage() {
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                            type: "text",
+                            required: true,
                             placeholder: t("name"),
                             value: name,
                             onChange: (e)=>setName(e.target.value),
-                            className: "w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none"
+                            className: "w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none focus:border-white/30 transition-colors"
                         }, void 0, false, {
                             fileName: "[project]/app/[locale]/(auth)/register/RegistrationClient.tsx",
-                            lineNumber: 77,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                             type: "email",
                             required: true,
                             placeholder: t("email"),
-                            pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+                            pattern: "[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}",
                             title: t("errors.invalidEmail"),
                             value: email,
                             onChange: (e)=>setEmail(e.target.value),
-                            className: "w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none"
+                            className: "w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none focus:border-white/30 transition-colors"
                         }, void 0, false, {
                             fileName: "[project]/app/[locale]/(auth)/register/RegistrationClient.tsx",
-                            lineNumber: 84,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                             type: "password",
                             required: true,
+                            minLength: 6,
                             placeholder: t("password"),
                             value: password,
                             onChange: (e)=>setPassword(e.target.value),
-                            className: "w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none"
+                            className: "w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none focus:border-white/30 transition-colors"
                         }, void 0, false, {
                             fileName: "[project]/app/[locale]/(auth)/register/RegistrationClient.tsx",
-                            lineNumber: 95,
+                            lineNumber: 98,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             disabled: loading,
-                            className: "w-full rounded-xl bg-white text-black py-2.5 disabled:opacity-50",
+                            className: "w-full rounded-xl bg-white text-black py-2.5 font-medium hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all",
                             children: loading ? t("loading") : t("submit")
                         }, void 0, false, {
                             fileName: "[project]/app/[locale]/(auth)/register/RegistrationClient.tsx",
-                            lineNumber: 104,
+                            lineNumber: 108,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -152,17 +155,17 @@ function RegisterPage() {
                                 " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     href: `/${locale}/login`,
-                                    className: "underline",
+                                    className: "underline hover:text-white transition-colors",
                                     children: t("signIn")
                                 }, void 0, false, {
                                     fileName: "[project]/app/[locale]/(auth)/register/RegistrationClient.tsx",
-                                    lineNumber: 113,
+                                    lineNumber: 117,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/[locale]/(auth)/register/RegistrationClient.tsx",
-                            lineNumber: 111,
+                            lineNumber: 115,
                             columnNumber: 11
                         }, this)
                     ]

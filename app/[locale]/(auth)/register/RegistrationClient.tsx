@@ -72,45 +72,49 @@ export default function RegisterPage() {
             </div>
           )}
 
-          {/* Basic client-side validation before hitting the API */}
-
+          {/* Name Field */}
           <input
+            type="text"
+            required
             placeholder={t("name")}
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none"
+            className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none focus:border-white/30 transition-colors"
           />
 
+          {/* Email Field */}
           <input
             type="email"
             required
             placeholder={t("email")}
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
             title={t("errors.invalidEmail")}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none"
+            className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none focus:border-white/30 transition-colors"
           />
 
+          {/* Password Field */}
           <input
             type="password"
             required
+            minLength={6} 
             placeholder={t("password")}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none"
+            className="w-full rounded-xl bg-gray-950/60 border border-white/10 px-4 py-2 text-white focus:outline-none focus:border-white/30 transition-colors"
           />
 
           <button
             disabled={loading}
-            className="w-full rounded-xl bg-white text-black py-2.5 disabled:opacity-50"
+            className="w-full rounded-xl bg-white text-black py-2.5 font-medium hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
           >
             {loading ? t("loading") : t("submit")}
           </button>
 
           <p className="text-center text-sm text-white/60">
             {t("haveAccount")}{" "}
-            <Link href={`/${locale}/login`} className="underline">
+            <Link href={`/${locale}/login`} className="underline hover:text-white transition-colors">
               {t("signIn")}
             </Link>
           </p>
