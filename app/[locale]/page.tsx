@@ -68,25 +68,25 @@ export default async function Home({
               {t("brand")}
             </h1>
           </div>
-          
+
           <div className="flex items-center gap-1.5 sm:gap-6 shrink-0">
             <div className="scale-75 sm:scale-100 origin-right">
               <LanguageSwitch locale={locale} />
             </div>
-            
+
             <div className="h-4 w-[1px] bg-white/10 hidden sm:block"></div>
-            
+
             {!isLoggedIn ? (
               <div className="flex items-center gap-2 sm:gap-4">
-                <Link href={`/${locale}/login`} className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors whitespace-nowrap">
+                <Link href={`/${locale}/login`} className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-zinc-400 md:hover:text-white active:text-white transition-colors whitespace-nowrap">
                   {t("navSignIn")}
                 </Link>
-                <Link href={`/${locale}/register`} className="px-3 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-all whitespace-nowrap">
+                <Link href={`/${locale}/register`} className="px-3 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest md:hover:bg-zinc-200 active:scale-95 transition-all whitespace-nowrap">
                   {t("navStartFree")}
                 </Link>
               </div>
             ) : (
-              <Link href={`/${locale}/dashboard`} className="px-3 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-zinc-200 transition-all whitespace-nowrap">
+              <Link href={`/${locale}/dashboard`} className="px-3 py-2 sm:px-5 sm:py-2.5 rounded-full bg-white text-black text-[10px] sm:text-xs font-bold uppercase tracking-widest md:hover:bg-zinc-200 active:scale-95 transition-all whitespace-nowrap">
                 {t("goToDashboard")}
               </Link>
             )}
@@ -96,7 +96,7 @@ export default async function Home({
 
       <main className="relative z-10 max-w-7xl mx-auto px-6 py-32 lg:py-40">
         <ScrollAnimation className="text-center max-w-4xl mx-auto mb-28">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[10px] font-medium uppercase tracking-widest mb-10 hover:bg-white/10 transition-colors">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-[10px] font-medium uppercase tracking-widest mb-10 md:hover:bg-white/10 transition-colors">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
             {t("eyebrow")}
           </div>
@@ -115,15 +115,15 @@ export default async function Home({
           <div className="mt-14 flex flex-wrap justify-center gap-4">
             {!isLoggedIn ? (
               <>
-                <Link href={`/${locale}/register`} className="px-10 py-4 rounded-full bg-white text-black text-sm font-semibold hover:scale-105 transition-all duration-300">
+                <Link href={`/${locale}/register`} className="px-10 py-4 rounded-full bg-white text-black text-sm font-semibold md:hover:scale-105 active:scale-95 transition-all duration-300">
                   {t("ctaPrimary")}
                 </Link>
-                <Link href={`/${locale}/login`} className="px-10 py-4 rounded-full border border-white/10 bg-black text-sm font-semibold hover:bg-white/5 text-zinc-300 transition-all">
+                <Link href={`/${locale}/menu/demo`} className="px-10 py-4 rounded-full border border-white/10 bg-black text-sm font-semibold md:hover:bg-white/5 active:bg-white/10 text-zinc-300 transition-all">
                   {t("ctaSecondary")}
                 </Link>
               </>
             ) : (
-              <Link href={`/${locale}/dashboard`} className="px-10 py-4 rounded-full bg-white text-black text-sm font-semibold hover:bg-zinc-200 transition">
+              <Link href={`/${locale}/dashboard`} className="px-10 py-4 rounded-full bg-white text-black text-sm font-semibold md:hover:bg-zinc-200 active:scale-95 transition">
                 {t("goToDashboard")}
               </Link>
             )}
@@ -167,8 +167,8 @@ export default async function Home({
               </div>
 
               <div className="relative group">
-                <div className="absolute inset-0 bg-white/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                <div className="relative bg-white p-5 rounded-[2.5rem] shadow-[0_0_50px_-10px_rgba(255,255,255,0.1)] transform group-hover:scale-105 transition-transform duration-500">
+                <div className="absolute inset-0 bg-white/10 rounded-3xl blur-2xl opacity-0 md:group-hover:opacity-100 transition-opacity duration-700" />
+                <div className="relative bg-white p-5 rounded-[2.5rem] shadow-[0_0_50px_-10px_rgba(255,255,255,0.1)] transform md:group-hover:scale-105 transition-transform duration-500">
                   <div className="w-48 h-48 md:w-56 md:h-56 bg-white flex items-center justify-center">
                     <img
                       src={`https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(`${baseUrl}/${locale}/menu/demo`)}`}
@@ -198,13 +198,13 @@ export default async function Home({
             <ScrollAnimation
               key={titleKey}
               delay={i * 50}
-              className="group rounded-2xl bg-zinc-900/20 border border-white/5 p-10 hover:bg-zinc-900/60 hover:border-white/20 transition-all duration-500"
+              className="group rounded-2xl bg-zinc-900/20 border border-white/5 p-10 md:hover:bg-zinc-900/60 md:hover:border-white/20 transition-all duration-500"
             >
-              <div className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-white group-hover:text-black transition-all duration-500">
-                <div className="w-2 h-2 bg-white group-hover:bg-black transition-colors duration-500" />
+              <div className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center mb-6 md:group-hover:bg-white md:group-hover:text-black transition-all duration-500">
+                <div className="w-2 h-2 bg-white md:group-hover:bg-black transition-colors duration-500" />
               </div>
               <h3 className="text-lg font-bold text-white">{t(titleKey)}</h3>
-              <p className="text-sm text-zinc-500 mt-4 leading-loose group-hover:text-zinc-400 transition-colors">{t(descKey)}</p>
+              <p className="text-sm text-zinc-500 mt-4 leading-loose md:group-hover:text-zinc-400 transition-colors">{t(descKey)}</p>
             </ScrollAnimation>
           ))}
         </div>
@@ -215,11 +215,11 @@ export default async function Home({
             <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">{t("contactTitle")}</h3>
             <p className="text-zinc-500 mt-6 max-w-xl mx-auto">{t("contactDesc")}</p>
             <div className="mt-12 flex flex-col md:flex-row justify-center gap-6">
-              <div className="px-8 py-4 rounded-full border border-white/5 bg-zinc-900/50 hover:bg-white/5 transition-colors flex items-center justify-center gap-3">
+              <div className="px-8 py-4 rounded-full border border-white/5 bg-zinc-900/50 md:hover:bg-white/5 transition-colors flex items-center justify-center gap-3">
                 <span className="text-xs uppercase tracking-widest text-zinc-500">{t("contactEmailLabel")}</span>
                 <span className="text-white font-medium">{t("contactEmail")}</span>
               </div>
-              <div className="px-8 py-4 rounded-full border border-white/5 bg-zinc-900/50 hover:bg-white/5 transition-colors flex items-center justify-center gap-3">
+              <div className="px-8 py-4 rounded-full border border-white/5 bg-zinc-900/50 md:hover:bg-white/5 transition-colors flex items-center justify-center gap-3">
                 <span className="text-xs uppercase tracking-widest text-zinc-500">{t("contactInstagramLabel")}</span>
                 <span className="text-white font-medium">{t("contactInstagram")}</span>
               </div>
@@ -233,7 +233,7 @@ export default async function Home({
             <p className="text-zinc-500 mt-6 text-lg">{t("finalDesc")}</p>
             <Link
               href={`/${locale}/${isLoggedIn ? "dashboard" : "register"}`}
-              className="inline-block mt-12 px-14 py-5 rounded-full bg-white text-black text-sm font-bold tracking-wide hover:scale-105 transition-all duration-300 shadow-[0_0_50px_-10px_rgba(255,255,255,0.3)]"
+              className="inline-block mt-12 px-14 py-5 rounded-full bg-white text-black text-sm font-bold tracking-wide md:hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_50px_-10px_rgba(255,255,255,0.3)]"
             >
               {isLoggedIn ? t("goToDashboard") : t("finalButton")}
             </Link>
