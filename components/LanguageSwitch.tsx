@@ -30,7 +30,7 @@ export default function LanguageSwitch({ locale }: { locale: string }) {
             <path fill="#f00" d="M100 80h40v40h40v40h-40v40h-40v-40H60v-40h40zM460 80h40v40h40v40h-40v40h-40v-40h-40v-40h40zM100 320h40v40h40v40h-40v40h-40v-40H60v-40h40zM460 320h40v40h40v40h-40v40h-40v-40h-40v-40h40z" />
           </svg>
         </div>
-        <span className="text-[10px] font-bold tracking-widest uppercase">GEO</span>
+        <span className="text-[10px] font-bold tracking-widest uppercase"></span>
       </button>
 
       <button
@@ -52,7 +52,7 @@ export default function LanguageSwitch({ locale }: { locale: string }) {
             <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z" />
           </svg>
         </div>
-        <span className="text-[10px] font-bold tracking-widest uppercase">ENG</span>
+        <span className="text-[10px] font-bold tracking-widest uppercase"></span>
       </button>
     </div>
   );
