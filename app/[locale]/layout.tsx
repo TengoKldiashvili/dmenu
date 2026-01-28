@@ -1,7 +1,7 @@
 
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-
+import type { Metadata } from "next";
 import en from "@/messages/en.json";
 import ka from "@/messages/ka.json";
 import { fontEn, fontKa } from "@/app/fonts";
@@ -12,7 +12,13 @@ const MESSAGES: Record<Locale, typeof en> = {
   en,
   ka,
 };
-
+export const metadata: Metadata = {
+  title: "DMENU",
+  description: "Digital QR Menu",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 export default async function LocaleLayout({
   children,
   params,
