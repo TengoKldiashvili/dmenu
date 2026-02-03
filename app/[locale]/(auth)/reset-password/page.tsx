@@ -208,8 +208,8 @@ export default function ResetPasswordPage() {
               className="text-sm text-white/60 hover:underline disabled:opacity-40"
             >
               {cooldown > 0
-                ? `კოდის ხელახლა გაგზავნა (${cooldown}s)`
-                : "კოდის ხელახლა გაგზავნა"}
+                ? `{t("resendCode")} (${cooldown}s)`
+                : t("resendCode")}
             </button>
           </div>
 
