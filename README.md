@@ -55,7 +55,7 @@ cd dmenu
     # Database
     DATABASE_URL=""
     DIRECT_URL=""
-    UPLOADTHING_TOKEN = ""
+    UPLOADTHING_TOKEN =""
 
     # Auth
     NEXTAUTH_SECRET=""
