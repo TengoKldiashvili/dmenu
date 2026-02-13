@@ -51,14 +51,16 @@ cd dmenus
 ### 3.Environment Setup:**
     Create a `.env` file in the root directory such as env.example and populate it with your credentials:
     ```env
+    
     # Database
     DATABASE_URL=""
     DIRECT_URL=""
-    
+    UPLOADTHING_TOKEN = ""
+
     # Auth
     NEXTAUTH_SECRET=""
     NEXTAUTH_URL="http://localhost:3000"
-    
+
     # Email (Gmail)
     EMAIL_HOST="smtp.gmail.com"
     EMAIL_PORT="465"
